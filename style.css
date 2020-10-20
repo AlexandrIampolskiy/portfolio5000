@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; 
+   /*  font-family: 'Times New Roman', Times, sans-serif; */
+    
+}
+
+/* Nav */
+
+.nav-wrapper {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    /* border-bottom: 1px solid gold; */
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+}
+
+/* .logo:hover {
+    font-weight: bold;
+} */
+
+nav ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    border-bottom: 1px solid transparent;
+    padding: 10px;
+}
+
+nav li:hover {
+    border-bottom: 1px solid black;
+    transition: border-bottom 1.5s;
+    
+}
+
+nav li a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+/* main-text */
+
+.welcome {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+
+}
+
+    /* the text cursor */
+main .txt, h1 {
+    padding-right: 5px;
+    border-right: 1px solid black;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 200;
+    font-size: 35px;
+    
+    text-shadow: 0px 1px 10px rgba(255, 255, 255, 0.95);
+}
+
+.main-wrapper-img {
+    width: 100%;
+    height: 300px;
+    background-image: url("img/skyline.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-wrapper-text {
+    padding-top: 12%;
+    padding-bottom: 13%;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    
+    /*  border-bottom: 4px solid black;
+    border-top: 4px solid black; */
+}
+
+
+/* main-about me */
+
+.aboutme {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.aboutme-title img {
+    width: 100px;
+    border-radius: 12px;
+}
+
+/* main-cards */
+
+.portfolio-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-card-wrapper {
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}
+
+.portfolio-card-image {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.8s;
+}
+
+.card-content-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;  /* bei screen alle -x200 padding reduziern */
+    padding-right: 100px; /* bei screen alle -x200 padding reduziern */
+}
+
+.card-content-text {
+    color: white;
+    transition: 1s;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card-content-logo {
+    color: white;
+    font-size: 70px;
+}
+
+.card-content-logo img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.card-content-wrapper .card-content-text {
+    font-weight: 600;
+    color: transparent;
+}
+
+.card-content-wrapper:hover .card-content-text {
+    font-weight: 600;
+    color: lightgreen;
+    transition: 1s;
+}
+
+.card-content-wrapper:hover .skills {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    list-style: none;
+    transition: 1s;
+}
+
+.card-content-wrapper:hover .skills li {
+    margin: 20px 0;
+    color: white;
+    transition: 0.5s;
+}
+
+.card-content-wrapper:hover .bar {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow:  0 0 10px lightgreen; /* #2187e7b3 */
+} 
+
+.card-content-wrapper:hover .bar span {
+    height: 20px;
+    float: left;
+    background: lightgreen; /* #2187e7; */
+}
+
+.card-content-wrapper:hover .html {
+    width: 86%; /* in den @keyframes anpassen bei 100% */
+    animation: html 2s;
+}
+.card-content-wrapper:hover .css {
+    width: 60%; /* in den @keyframes anpassen bei 100% */
+    animation: css 2s;
+}
+.card-content-wrapper:hover .javascript {
+    width: 35%; /* in den @keyframes anpassen bei 100% */
+    animation: javascript 2s;
+}
+.card-content-wrapper:hover .php {
+    width: 33%; /* in den @keyframes anpassen bei 100% */
+    animation: php 2s;
+}
+.card-content-wrapper:hover .csharp {
+    width: 3%; /* in den @keyframes anpassen bei 100% */
+    animation: csharp 2s;
+}
+.card-content-wrapper:hover .java {
+    width: 25%; /* in den @keyframes anpassen bei 100% */
+    animation: java 2s;
+}
+.card-content-wrapper:hover .cpp {
+    width: 1%; /* in den @keyframes anpassen bei 100% */
+    animation: cpp 2s;
+}
+.card-content-wrapper:hover .solidity {
+    width: 5%; /* in den @keyframes anpassen bei 100% */
+    animation: solidity 2s;
+}
+.card-content-wrapper:hover .python {
+    width: 20%; /* in den @keyframes anpassen bei 100% */
+    animation: python 2s;
+}
+
+.img-darken {
+    transition: 0.7s;
+    filter: brightness(13%);
+}
+
+.img-scale {
+    transition: 0.7s;
+    transform: scale(1.2); /* scale(ganzes bild) beim click ist ne gute IDEE  */
+}
+
+.img-scale-full {
+    transition: 2s;
+    transform: scale(4);
+}
+
+.cardtext-remove {
+    visibility: hidden;
+}
+
+/* Progress-Bar */
+
+/* .skills {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    list-style: none;
+} */
+
+/* .skills li {
+    margin: 20px 0;
+} */
+
+.skills li {
+    color: transparent;
+}
+
+/* .bar {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow:  0 0 10px lightgreen /* #2187e7b3; 
+} */
+
+/* .bar span {
+    height: 20px;
+    float: left;
+    background: lightgreen /* #2187e7; 
+} */
+
+/* .html {
+    width: 75%;
+    animation: html 2.5s;
+} */
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 33%;
+    }
+}
+
+@keyframes csharp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 3%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 1%;
+    }
+}
+
+@keyframes solidity {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 5%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+/* Form */
+
+.contact-form {
+    padding: 50px;
+    background-color: white;
+}
+
+.contact-form-wrapper {
+    background-color: transparent;
+    max-width: 550px;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: flex;
+    ; /*set by default */
+    box-shadow: 0 0 10px;
+}
+
+.cf-input-fields {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.cf-input-fields, .cf-msg {
+    width: 50%;
+}
+
+.cf-input-fields .input, .cf-msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid gold;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.cf-msg textarea {
+    width: 100%;
+    text-align: initial;
+    height: 212px;
+}
+
+.cf-btn {
+    background: gold;
+    cursor: pointer;
+    text-align: center;
+    padding: 19px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+/* Footer contact data */
+
+.contact {
+    padding-top: 100px;
+}
+
+.contact-wrapper {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.contact-data-wrapper {
+    display: flex;
+}
+
+.tel-logo img, .email-logo img, .insta-logo img,
+.github-logo img {
+    width: 70px;
+    padding: 20px;
+}
+
+.email, .tel, .insta, .github {
+    padding-right: 5px;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    
+}
+
+
+
+/* bewerbung (bewerbung.php)*/
+
+.centered {
+    width: 60%;
+    margin: auto;
+}
+
+.kopfzeile {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.wrapper-kopfzeile {
+    display: grid;
+    grid-template-areas:
+    "application-my-data application-photo"
+    "application-company-details application-datum";
+
+}
+
+.application-my-data {
+    grid-area: application-my-data;
+}
+
+.application-photo {
+    grid-area: application-photo;
+    text-align: right;
+}
+
+.application-company-details {
+    grid-area: application-company-details;
+}
+
+.application-datum {
+    grid-area: application-datum;
+    text-align: right;
+    padding-top:100px;
+}
+
+.letter_content {
+    margin-bottom: 250px;
+    font-size: 20px;
+}
+
+.letter-content h3 {
+    font-size: 300px;
+}
+
+/* Lebenslauf/resume (Lebanlauf.php)*/
+
+.resume-title, .werdegang-title {
+    font-size: 24px;
+    text-align:center;
+    padding-top:50px;
+    padding-bottom: 70px;
+}
+
+.resume-data {
+    display: grid;
+    grid-template-areas: 
+    "resume-photo-wrapper resume-data-wrapper"
+    ;
+}
+
+.resume-photo-wrapper {
+    grid-area: resume-photo-wrapper;
+    text-align: right;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.resume-data-wrapper {
+    grid-area: resume-data-wrapper;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.resume-name {
+    margin-bottom: 25px;
+}
+.resume-conatact {
+    margin-bottom: 25px;
+}
+
+.resume-datum {
+    text-align: center;
+    font-size: 20px;;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+/* 
+.resume-datum:hover, .resume-skills:hover {
+    transition: .65s;
+    background-color: #0c0a45;
+    color: white;
+    font-weight: bolder;
+}
+ */
+
+
+.resume_skills {
+    text-align: center;
+    font-size: 20px;;
+    grid-area: 1;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cut-line {
+    height: 6px;
+    background-color: #0c0a45;
+}
+
+hr {
+    color:  #0c0a45;
+    margin: 0px;
+    padding: 0px;
+    width: 60%;
+    margin: auto;
+    opacity: 0.5;
+}
+
+.cut-line {
+    background-color: yellow;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .nav-wrapper ul {
+            flex-direction: column;
+            margin: auto;
+            /* border-bottom: 1px solid gold; */
+        }   
+        .nav-wrapper a {
+            padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .card-content-wrapper {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+        text-align: center;
+        padding-left: 10px;  /* bei screen alle -x200 padding reduziern */
+        padding-right: 10px; /* bei screen alle -x200 padding reduziern */
+    } 
+
+    .cf-input-fields, .cf-msg, .cf-btn {
+        margin: 0 auto;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns:1fr
+    }
+
+    .contact-form-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-data-wrapper {
+        margin: auto;
+    }   
+}
+
+
+@media screen and (max-width: 800px) {
+    .portfolio-cards-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .logo {
+        margin: auto;
+    }
+
+    .nav-wrapper ul {
+        padding-top: 60px;
+    }
+
+    .nav-wrapper {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contact-form-wrapper {
+        flex-direction: flex;
+        justify-content: center;
+    }
+
+    .portfolio-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-content-wrapper {
+        position: absolute;
+        top: 0;
+        align-items: center; 
+        height: 100%;
+        text-align: center;
+        padding-left: 100px;  /* bei screen alle -x200 padding reduziern */
+        padding-right: 100px; /* bei screen alle -x200 padding reduziern */
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .nav-wrapper .logo {
+        font-size: 30px;
+    }
+
+    .contact-form-wrapper {
+        flex-direction: column;
+    }
+
+    .portfolio-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .cf-input-fields, .cf-msg, .cf-btn {
+        margin: 0 auto;
+    }
+
+    .cf-btn {
+        background: gold;
+        cursor: pointer;
+        text-align: center;
+        padding: 19px 0;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .nav-wrapper .logo {
+        font-size: 22px;
+    }
+
+}
+
