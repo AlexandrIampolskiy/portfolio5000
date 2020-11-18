@@ -20,9 +20,9 @@
           // dann ==> USERNAME IST FREI dann
           if($_POST["pw"] == $_POST["pw2"]) {
             // ==> USER ANLEGEN
+              $hash = password_hash($_POST["pw"], PASSWORD_BCRYPT);
               $stmt = $mysql->prepare("INSERT INTO user (username, userpass, anrede, company, companystreet, companyplz, companycity) VALUES(:user, :pw, :anrede, :company, :companystreet, :companyplz, :companycity)");
               $stmt->bindParam(":user", $_POST["username"]);
-              $hash = password_hash($_POST["pw"], PASSWORD_BCRYPT);
               $stmt->bindParam(":pw", $hash);
               $stmt->bindParam(":anrede", $_POST["anrede"]);
               $stmt->bindParam(":company", $_POST["company"]);
@@ -56,7 +56,6 @@
       <br>
 
     </form>
-    <br>
 
   </body>
 </html>

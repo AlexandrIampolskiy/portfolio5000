@@ -1,45 +1,26 @@
-<!-- footer -->
+
 <footer>
     <section class="contact">
-        <div class="contact-wrapper">
-                <div class="contact-data-wrapper">
-                    <div class="tel-logo">
-                        <img src="img/icons/phone.png" alt="">
-                    </div>
-                    <div class="tel">
-                        0151123123123
-                    </div>
-                </div>
-                <div class="contact-data-wrapper">
-                    <div class="email-logo">
-                        <img src="img/icons/email.png" alt="">
-                    </div>
-                    <div class="email">
-                        Alexandr@123.de
-                    </div>
-                </div>
-                <div class="contact-data-wrapper">
-                    <div class="insta-logo">
-                        <img src="img/icons/insta.png" alt="">
-                    </div>
-                    <div class="insta">
-                        InstagramName
-                    </div>
-                </div>
-                <div class="contact-data-wrapper">
-                    <div class="github-logo">
-                        <img src="img/icons/github.png" alt="">
-                    </div>
-                    <div class="github">
-                        GithubName
-                    </div>
-                </div>
-        </div>
+        <ul class="contact-wrapper">
+                <ul class="contact-data-wrapper">
+                    <li class="tel-logo"><img src="img/icons/phone.png" alt=""></li>
+                    <li class="tel">0151123123123</li>
+                </ul>
+                <ul class="contact-data-wrapper">
+                    <li class="email-logo"><img src="img/icons/email.png" alt=""></li>
+                    <li class="email">Alexandr@123.de</li>
+                </ul>
+                <ul class="contact-data-wrapper">
+                    <li class="insta-logo"><img src="img/icons/insta.png" alt=""></li>
+                    <li class="insta">InstagramName</li>
+                </ul>
+                <ul class="contact-data-wrapper">
+                    <li class="github-logo"><img src="img/icons/github.png" alt=""></li>
+                    <li class="github">GithubName</li>
+                </ul>
+        </ul>
     </section>
 </footer>
-
-</body>
-
 <script type="text/javascript" src="script.js"></script>
-
+</body>
 </html>

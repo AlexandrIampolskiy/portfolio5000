@@ -21,7 +21,7 @@
       <!-- daten vom unternehmen (adresse, ansprechsperson usw.) -->
       <div class="application-company-details">
         <?php
-          require("mysql.php");
+          require("mysql.php");     
           $username = $_SESSION['username'];
           $stmt = $mysql->prepare("SELECT company FROM user WHERE username = '$username'");
           $stmt->execute();
@@ -72,16 +72,21 @@
         print_r($row['anrede']);
       ?>
       <br/>
-      ich würde sehr gerne ein Praktikum als Fachinformatiker für Anwendungsentwicklung, in Ihrem  Betrieb absolvieren.<br/><br/>
-      Seit August 2019 nehme ich, beim Forum Berufsbildung Berlin e.V., an einer Umschulung zum Fachinformatiker für Anwendungsentwicklung teil.<br/>
-      Die Umschulung dauert zwei Jahre und bereichert mein persönliches Interesse mit technischer Fachkompetenz. Ich interessiere mich für mobile Webanwendungen, Datenbanken und Automatisierung. Als Quereinsteiger bereue ich sehr, dass ich nicht schon früher angefangen habe mich mit Programmiersprachen zu beschäftigen.<br/><br/>
-      Da ich sehr früh im Leben lernen musste auf eigenen Beinen zu stehen, gehören  selbstständiges Arbeiten und logisches Denken zu meinen Stärken. Ich bin belastbar und habe kein Problem damit unter Druck zu arbeiten. Das konnte ich während meiner Tätigkeit in Russland als selbstständiger Unternehmer, sowie als Vertreter für einen Erstligaverein in der russischen Republik Dagestan unter Beweis stellen.<br/>
-      Mein Arbeitsstil ist gründlich, zielstrebig und qualitätsbewusst. Das wurde mir von meinem  bisherigen Arbeitgebern bestätigt. Termintreue und verbindliches Arbeiten sind mir wirklich wichtig.<br/> Mein Sprachprofil umfasst Deutsch, Englisch und Russisch mündlich, schriftlich und verhandlungssicher. In meiner Freizeit mache ich Sport und gebe ich Nachhilfe in Deutsch für russische Kinder.<br/><br/>
-      Das Praktikum würde ich ab sofort beginnen können. Dabei stehe ich Ihnen bis zum 28. August 2020 täglich zu Verfügung (Montag bis Freitag) und ab dem 31. August 2020 bis zum 12. Mai 2021 nur von Montag bis Mittwoch, da ich in diesem Zeitraum jeweils am Donnerstag und Freitag am Fachunterricht in der Schule teilnehmen muss.<br/><br/>
-      Ich freue mich sehr über eine Einladung zu einem persönlichem Gespräch. <br/><br/>
-      Mit freundlichen Grüßen</p><br/><br>
-      <p>Alexandr Iamoplskaia
-    </p>
+      <p>ich würde sehr gerne ein Praktikum als Fachinformatiker für Anwendungsentwicklung, in Ihrem  Betrieb absolvieren.</p>
+      <p>Seit August 2019 nehme ich, beim Forum Berufsbildung Berlin e.V., an einer Umschulung zum Fachinformatiker für Anwendungsentwicklung teil.</p>
+      <p>Die Umschulung dauert zwei Jahre und bereichert mein persönliches Interesse mit technischer Fachkompetenz. Ich interessiere mich für mobile Webanwendungen, Datenbanken und Automatisierung. Als Quereinsteiger bereue ich sehr, dass ich nicht schon früher angefangen habe mich mit Programmiersprachen zu beschäftigen.</p>
+      <br>
+      <p>Da ich sehr früh im Leben lernen musste auf eigenen Beinen zu stehen, gehören  selbstständiges Arbeiten und logisches Denken zu meinen Stärken. Ich bin belastbar und habe kein Problem damit unter Druck zu arbeiten. Das konnte ich während meiner Tätigkeit in Russland als selbstständiger Unternehmer, sowie als Vertreter für einen Erstligaverein in der russischen Republik Dagestan unter Beweis stellen.</p>
+      <p>Mein Arbeitsstil ist gründlich, zielstrebig und qualitätsbewusst. Das wurde mir von meinem  bisherigen Arbeitgebern bestätigt. Termintreue und verbindliches Arbeiten sind mir wirklich wichtig.</p> 
+      <br>
+      <p>Mein Sprachprofil umfasst Deutsch, Englisch und Russisch mündlich, schriftlich und verhandlungssicher. In meiner Freizeit mache ich Sport und gebe ich Nachhilfe in Deutsch für russische Kinder.</p>
+      <p>Das Praktikum würde ich ab sofort beginnen können. Dabei stehe ich Ihnen bis zum 28. August 2020 täglich zu Verfügung (Montag bis Freitag) und ab dem 31. August 2020 bis zum 12. Mai 2021 nur von Montag bis Mittwoch, da ich in diesem Zeitraum jeweils am Donnerstag und Freitag am Fachunterricht in der Schule teilnehmen muss.</p>
+      <p>Ich freue mich sehr über eine Einladung zu einem persönlichem Gespräch.</p>
+      <br>
+      <p>Mit freundlichen Grüßen</p>
+      <br>
+      <p>Alexandr Iamoplskaia</p>
+    
   </section>
 </div>
 </main>

@@ -3,13 +3,13 @@
 ?>
 
 <main>
-    <section class="main-wrapper-img"></section> <!-- bild unter dem nav -->
+    <section id="main-wrapper-img" class="main-wrapper-img"></section> <!-- bild unter dem nav -->
     <!-- main text -->
     <section class="main-wrapper-text">
-        <h1 class="welcome">Wilkommen auf meiner Bewerbungsmappe</h1>  
+        <h1 class="welcome">Wilkommen auf meiner Bewerbungsmappe    
         <br>
-        <h1>Hier können Sie sich
-            <span class="txt-type" data-wait="3000" data-words='["meine Bewerungsunterlagen einsehen.", "einen Überblick über meine Erfahrung und meine Projekte verschaffen."]'></span>
+        Hier können Sie sich
+        <span class="txt-type" data-wait="3000" data-words='["meine Bewerungsunterlagen einsehen.", "einen Überblick über meine Erfahrung und meine Projekte verschaffen."]'></span>
         </h1>
     </section>
     <!-- main cards -->
