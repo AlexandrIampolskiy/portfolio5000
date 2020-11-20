@@ -452,6 +452,7 @@ main .txt, h1 {
     margin: auto;
     overflow: hidden;
     position: relative;
+    margin-top: 150px;
     }
 
     .carousel-slide {
