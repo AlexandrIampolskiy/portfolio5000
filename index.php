@@ -78,7 +78,7 @@
             <div class="portfolio-card-wrapper">
                 <div class="portfolio-card-image" style="background-image: url(img/java.jpg);"></div>
                 <div class="card-content-wrapper">
-                    <div class="card-content-logo">Java<!-- <img src="csharp.png" alt=""> --></div>
+                    <div class="card-content-logo">Java<!-- <img src="java.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit Java</div>
                     <div class="skills">
                         <li>
@@ -90,7 +90,7 @@
             <div class="portfolio-card-wrapper">
                 <div class="portfolio-card-image" style="background-image: url(img/c++.jpg);"></div>
                 <div class="card-content-wrapper">
-                    <div class="card-content-logo">C++<!-- <img src="csharp.png" alt=""> --></div>
+                    <div class="card-content-logo">C++<!-- <img src="c++.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit C++</div>
                     <div class="skills">
                         <li>
@@ -140,9 +140,84 @@
             
         </div>
     </section>
+
+    
+    <section class="slider">
+        <div class="carousel-container">
+            <i id=btnPrev class="fas fa-arrow-left"></i>
+            <i id=btnNext class="fas fa-arrow-right"></i>
+            <div class="carousel-slide">
+                <div class="img-wrap">
+                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px id=lastClone>
+                    <span class="img-text">
+                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts
+                    </span>
+                    <a class="link" href="google.com">Link zum Projekt</a>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/java.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts
+                    </span>
+                    <a class="link" href="google.com">Link zum Projekt</a>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/css.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts
+                    </span>
+                    <a class="link" href="google.com">Link zum Projekt</a>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/javascript.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts
+                    </span>
+                    <a class="link" href="google.com">Link zum Projekt</a>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/csharp.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts
+                    </span>
+                    <a class="link" href="google.com">Link zum Projekt</a>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts
+                    </span>
+                    <a class="link" href="google.com">Link zum Projekt</a>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/java.jpg" alt="" width=1024px height=768px id=firstClone>
+                    <span class="img-text">
+                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts
+                    </span>
+                    <a class="link" href="google.com">Link zum Projekt</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 </main>
 
 <?php
-require('footer.php');
+    require('footer.php');
 ?>
+
 </body>

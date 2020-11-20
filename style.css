@@ -442,6 +442,84 @@ main .txt, h1 {
     border-radius: 5px;
 }
 
+
+
+/* Slider ______________________________________________________ */
+
+
+    .carousel-container {
+    width: 860px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .carousel-slide {
+    display: flex;
+    }
+
+    .img-text h1 {
+        max-width: 100px;
+        background-color: turquoise;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .img-text {
+        background-color: yellow;
+        position: relative;
+        top: -50%;
+        left: 100px;
+    }
+
+    .link {
+        background-color: yellow;
+        color: rgb(78, 12, 185);
+        position: relative;
+        top: -50%;
+        left: 10%;
+    }
+
+
+    #btnPrev {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+    }
+
+
+    #btnNext {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+    }
+
+    #btnNext:hover {
+        top: 50%;
+        right: 5%;
+        font-size: 80px;
+        color: white;
+        transition: 0.4s ease-in-out;
+    }
+
+    #btnPrev:hover {
+        top: 50%;
+        left: 5%;
+        font-size: 80px;
+        color: white;
+        transition: 0.4s ease;
+
+    }
+
+
 /* Footer contact data */
 
 .contact {
