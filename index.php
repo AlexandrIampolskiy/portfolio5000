@@ -6,11 +6,10 @@
     <section id="main-wrapper-img" class="main-wrapper-img"></section> <!-- bild unter dem nav -->
     <!-- main text -->
     <section class="main-wrapper-text">
-        <h1 class="welcome">Wilkommen auf meiner Bewerbungsmappe    
-        <br>
-        Hier können Sie sich
+        <h2 class="welcome">Wilkommen auf meiner Bewerbungsmappe</h2> 
+        <h4 class="welcome-autotype">Hier können Sie sich 
         <span class="txt-type" data-wait="3000" data-words='["meine Bewerungsunterlagen einsehen.", "einen Überblick über meine Erfahrung und meine Projekte verschaffen."]'></span>
-        </h1>
+        </h4>
     </section>
     <!-- main cards -->
     <section class="main-wrapper-cards">
@@ -125,7 +124,87 @@
             </div>
         </div>
     </section>
-    <!-- contact-Form -->
+<!-- SLIDER Projekte -->
+    <section class="slider">
+        <div class="carousel-container">
+            <i id=btnPrev class="fas fa-arrow-left"></i>
+            <i id=btnNext class="fas fa-arrow-right"></i>
+            <div class="carousel-slide">
+                <div class="img-wrap">
+                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px id=lastClone>
+                    <span class="img-text">
+                        <h1>ProjektName</h1>
+                        Hier steht die Beschreibung des Projekts <br> 
+                        Hier steht die Beschreibung desProjekts <br>
+                        
+                    </span>
+                    
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/java.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>ProjektName</h1>
+                        Hier steht die Beschreibung des Projekts<br> 
+                        Hier steht die Beschreibung des Projekts<br>
+                        
+                    </span>
+                    
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/css.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>ProjektName</h1>
+                        Hier steht die Beschreibung des Projekts<br>
+                        Hier steht die Beschreibung des Projekts<br>
+                    </span>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/javascript.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts <br>
+                        <a class="link" href="google.com">Link zum Projekt</a>
+                    </span>
+                    
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/csharp.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts <br>
+                        <a class="link" href="google.com">Link zum Projekt</a>
+                    </span>
+                    
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px>
+                    <span class="img-text">
+                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts <br>
+                        <a class="link" href="google.com">Link zum Projekt</a>
+                    </span>
+                    
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/java.jpg" alt="" width=1024px height=768px id=firstClone>
+                    <span class="img-text">
+                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
+                        Projekts <br>
+                        <a class="link" href="google.com">Link zum Projekt</a>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- contact-Form -->
     <section class="contact-form">
         <div class="contact-form-wrapper">
             <div class="cf-input-fields">
@@ -137,83 +216,9 @@
                 <textarea placeholder="Nachricht"></textarea>
                 <div class="cf-btn input">Abschicken</div>
             </div>
-            
         </div>
     </section>
 
-    
-    <section class="slider">
-        <div class="carousel-container">
-            <i id=btnPrev class="fas fa-arrow-left"></i>
-            <i id=btnNext class="fas fa-arrow-right"></i>
-            <div class="carousel-slide">
-                <div class="img-wrap">
-                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px id=lastClone>
-                    <span class="img-text">
-                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts
-                    </span>
-                    <a class="link" href="google.com">Link zum Projekt</a>
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/java.jpg" alt="" width=1024px height=768px>
-                    <span class="img-text">
-                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts
-                    </span>
-                    <a class="link" href="google.com">Link zum Projekt</a>
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/css.jpg" alt="" width=1024px height=768px>
-                    <span class="img-text">
-                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts
-                    </span>
-                    <a class="link" href="google.com">Link zum Projekt</a>
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/javascript.jpg" alt="" width=1024px height=768px>
-                    <span class="img-text">
-                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts
-                    </span>
-                    <a class="link" href="google.com">Link zum Projekt</a>
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/csharp.jpg" alt="" width=1024px height=768px>
-                    <span class="img-text">
-                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts
-                    </span>
-                    <a class="link" href="google.com">Link zum Projekt</a>
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px>
-                    <span class="img-text">
-                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts
-                    </span>
-                    <a class="link" href="google.com">Link zum Projekt</a>
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/java.jpg" alt="" width=1024px height=768px id=firstClone>
-                    <span class="img-text">
-                        <h1>Projekt Name</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts
-                    </span>
-                    <a class="link" href="google.com">Link zum Projekt</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
 </main>
 
 <?php
