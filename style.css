@@ -802,7 +802,8 @@ hr {
 
     .main-wrapper-text {
         max-width: 350px;
-        font-size: 22px;
+        font-size: 30px;
+        max-height: 480px;
     }
 
     .welcome-autotype {
