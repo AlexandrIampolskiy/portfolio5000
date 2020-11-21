@@ -15,7 +15,7 @@
     <section class="main-wrapper-cards">
         <div class="portfolio-cards-wrapper">
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/html.jpg);"></div>
+                <div class="portfolio-card-image html"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">HTML<!-- <img src="css.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit HTML</div>
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/css.jpg);"></div>
+                <div class="portfolio-card-image css"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">CSS<!-- <img src="css.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit CSS</div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/javascript.jpg);"></div>
+                <div class="portfolio-card-image js"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Java Script<!-- <img src="css.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit JavaScript</div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/php.jpg);"></div>
+                <div class="portfolio-card-image php"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">PHP<!-- <img src="css.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit PHP</div>
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/csharp.jpg);"></div>
+                <div class="portfolio-card-image csharp"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">C#<!-- <img src="csharp.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit C#</div>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/java.jpg);"></div>
+                <div class="portfolio-card-image java"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Java<!-- <img src="java.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit Java</div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/c++.jpg);"></div>
+                <div class="portfolio-card-image cpp"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">C++<!-- <img src="c++.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit C++</div>
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/solidity.jpg);"></div> <!-- BILD ZU GROSS ALLES LAHM MUSS UMKONVERTIEREN -->
+                <div class="portfolio-card-image solidity"></div> <!-- BILD ZU GROSS ALLES LAHM MUSS UMKONVERTIEREN -->
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Solidity<!-- <img src="css.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit Solidity</div>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image" style="background-image: url(img/keyboard.jpg);"></div>
+                <div class="portfolio-card-image py"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Python<!-- <img src="css.png" alt=""> --></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit Python</div>
@@ -126,9 +126,10 @@
     </section>
 <!-- SLIDER Projekte -->
     <section class="slider">
+        <h2> meine Projekte </h2>
         <div class="carousel-container">
-            <i id=btnPrev class="fas fa-arrow-left"></i>
-            <i id=btnNext class="fas fa-arrow-right"></i>
+            <i id=btnPrev class="fas fa-arrow-left"></i><!-- fa-arrow-left -->
+            <i id=btnNext class="fas fa-arrow-right"></i><!-- fa-arrow-right -->
             <div class="carousel-slide">
                 <div class="img-wrap">
                     <img src="img/keyboard.jpg" alt="" width=1024px height=768px id=lastClone>
@@ -136,9 +137,7 @@
                         <h1>ProjektName</h1>
                         Hier steht die Beschreibung des Projekts <br> 
                         Hier steht die Beschreibung desProjekts <br>
-                        
                     </span>
-                    
                 </div>
 
                 <div class="img-wrap">
@@ -147,9 +146,7 @@
                         <h1>ProjektName</h1>
                         Hier steht die Beschreibung des Projekts<br> 
                         Hier steht die Beschreibung des Projekts<br>
-                        
                     </span>
-                    
                 </div>
 
                 <div class="img-wrap">
@@ -166,7 +163,6 @@
                     <span class="img-text">
                         <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
                         Projekts <br>
-                        <a class="link" href="google.com">Link zum Projekt</a>
                     </span>
                     
                 </div>
@@ -176,7 +172,6 @@
                     <span class="img-text">
                         <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
                         Projekts <br>
-                        <a class="link" href="google.com">Link zum Projekt</a>
                     </span>
                     
                 </div>
@@ -186,7 +181,6 @@
                     <span class="img-text">
                         <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
                         Projekts <br>
-                        <a class="link" href="google.com">Link zum Projekt</a>
                     </span>
                     
                 </div>
@@ -196,7 +190,6 @@
                     <span class="img-text">
                         <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
                         Projekts <br>
-                        <a class="link" href="google.com">Link zum Projekt</a>
                     </span>
                     
                 </div>

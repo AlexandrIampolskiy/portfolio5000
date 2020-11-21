@@ -29,10 +29,6 @@
     padding-top: 10px;
 }
 
-.logo:hover {
-    font-weight: bold;
-}
-
 nav ul {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -47,7 +43,7 @@ nav li {
 
 nav li:hover {
     border-bottom: 1px solid black;
-    transition: border-bottom 1.5s;
+    transition: 1.4s;
     
 }
 
@@ -57,6 +53,12 @@ nav li a {
     text-decoration: none;
     color: black;
     padding: 20px;
+
+}
+
+nav li a:hover {
+    color: yellowgreen;
+    transition: 0.7s;
 }
 
 /* main img */
@@ -134,6 +136,34 @@ nav li a {
     background-position: center;
     background-repeat: no-repeat;
     transition: 0.8s;
+}
+
+.portfolio-card-image.html {
+    background-image: url("img/html.jpg");
+}
+.portfolio-card-image.css {
+    background-image: url("img/css.jpg");
+}
+.portfolio-card-image.js {
+    background-image: url("img/javascript.jpg");
+}
+.portfolio-card-image.php {
+    background-image: url("img/php.jpg");
+}
+.portfolio-card-image.csharp {
+    background-image: url("img/csharp.jpg");
+}
+.portfolio-card-image.java {
+    background-image: url("img/java.jpg");
+}
+.portfolio-card-image.cpp {
+    background-image: url("img/c++.jpg");
+}
+.portfolio-card-image.solidity {
+    background-image: url("img/solidity.jpg");
+}
+.portfolio-card-image.py {
+    background-image: url("img/keyboard.jpg");
 }
 
 .card-content-wrapper {
@@ -393,13 +423,23 @@ nav li a {
 
 /* Slider ______________________________________________________ */
 
+    .slider h2{
+        font-family: 'News Cycle', sans-serif;
+        width: 300px;
+        font-size: 40px;
+        margin: auto;
+        margin-top: 140px;
+        margin-bottom: 20px;
+        padding-left: 35px;
+        border: 1px solid black;
+    }
 
     .carousel-container {
-    width: 800px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    margin-top: 150px;
+        width: 800px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        margin-top: 80px;
     }
 
     .carousel-slide {
@@ -432,7 +472,7 @@ nav li a {
         z-index: 10;
         left: 5%;
         font-size: 50px;
-        color: red;
+        color: yellowgreen;
         cursor: pointer;
     }
 
@@ -442,24 +482,20 @@ nav li a {
         z-index: 10;
         right: 5%;
         font-size: 50px;
-        color: red;
+        color: yellowgreen;
         cursor: pointer;
     }
 
     #btnNext:hover {
-        top: 50%;
-        right: 5%;
-        font-size: 80px;
+        right: 3%;
         color: white;
-        transition: 0.4s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
 
     #btnPrev:hover {
-        top: 50%;
-        left: 5%;
-        font-size: 80px;
+        left: 3%;
         color: white;
-        transition: 0.4s ease;
+        transition: 0.6s ease;
     }
 
     
