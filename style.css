@@ -425,17 +425,17 @@ nav li a:hover {
 
     .slider h2{
         font-family: 'News Cycle', sans-serif;
-        width: 300px;
+        width: 150px;
         font-size: 40px;
         margin: auto;
         margin-top: 140px;
         margin-bottom: 20px;
-        padding-left: 35px;
-        border: 1px solid black;
+        
+        
     }
 
     .carousel-container {
-        width: 800px;
+        width: 640px;
         margin: auto;
         overflow: hidden;
         position: relative;
@@ -447,54 +447,47 @@ nav li a:hover {
     }
 
     .img-text h1  {
-        width: auto;
-        background-color: yellowgreen;
-        position: relative;
-        bottom: 100px;
+    
+    }
+
+    .img-text h1 a {
+        text-align: right;
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
     }
 
     .img-text {
-        background-color: yellow;
-        position: relative;
-        top: -50%;
-        left: 100px;
-    }
-
-    .link {
-        background-color: blue;
-        color: rgb(78, 12, 185);
-        margin-top:100px;
+        width: 100px;
     }
 
     #btnPrev {
         position: absolute;
-        top: 50%;
+        top: 40%;
         z-index: 10;
         left: 5%;
         font-size: 50px;
-        color: yellowgreen;
+        color: white;
         cursor: pointer;
     }
 
     #btnNext {
         position: absolute;
-        top: 50%;
+        top: 40%;
         z-index: 10;
         right: 5%;
         font-size: 50px;
-        color: yellowgreen;
+        color: white;
         cursor: pointer;
     }
 
     #btnNext:hover {
-        right: 3%;
-        color: white;
+        color: yellowgreen;;
         transition: 0.6s ease-in-out;
     }
 
     #btnPrev:hover {
-        left: 3%;
-        color: white;
+        color: yellowgreen;;
         transition: 0.6s ease;
     }
 
@@ -502,6 +495,7 @@ nav li a:hover {
 /* Form */
 
 .contact-form {
+    margin-top: 130px;
     padding: 50px;
     background-color: white;
 }

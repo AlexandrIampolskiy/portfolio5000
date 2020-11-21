@@ -126,70 +126,75 @@
     </section>
 <!-- SLIDER Projekte -->
     <section class="slider">
-        <h2> meine Projekte </h2>
+        <h2> Projekte </h2>
         <div class="carousel-container">
             <i id=btnPrev class="fas fa-arrow-left"></i><!-- fa-arrow-left -->
             <i id=btnNext class="fas fa-arrow-right"></i><!-- fa-arrow-right -->
             <div class="carousel-slide">
                 <div class="img-wrap">
-                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px id=lastClone>
+                    <img src="img/keyboard.jpg" alt="" width=640px height=480px id=lastClone>
                     <span class="img-text">
-                        <h1>ProjektName</h1>
+                        <h1><a href="">ProjektName</a></h1>
                         Hier steht die Beschreibung des Projekts <br> 
                         Hier steht die Beschreibung desProjekts <br>
                     </span>
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/java.jpg" alt="" width=1024px height=768px>
+                    <img src="img/ProjektDice.jpg" alt="" width=640px height=480px>
                     <span class="img-text">
-                        <h1>ProjektName</h1>
-                        Hier steht die Beschreibung des Projekts<br> 
+                        <h1><a href="Projekte/P1-Dice/index.html" target="_blank">Würfel</a></h1>
+                        Würfeln im Browser<br> 
+                        HTML, CSS, und JavaScript<br>
+                        Schwierigkeisstufe: Leicht<br>
+                    </span>
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/css.jpg" alt="" width=640px height=480px>
+                    <span class="img-text">
+                        <h1><a href="">ProjektName</a></h1>
+                        Hier steht die Beschreibung des Projekts<br>
                         Hier steht die Beschreibung des Projekts<br>
                     </span>
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/css.jpg" alt="" width=1024px height=768px>
+                    <img src="img/javascript.jpg" alt="" width=640px height=480px>
                     <span class="img-text">
-                        <h1>ProjektName</h1>
+                        <h1><a href="">ProjektName</a></h1>
+                        Hier steht die Beschreibung des Projekts<br>
+                        Hier steht die Beschreibung des Projekts <br>
+                    </span>
+                    
+                </div>
+
+                <div class="img-wrap">
+                    <img src="img/csharp.jpg" alt="" width=640px height=480px>
+                    <span class="img-text">
+                        <h1><a href="">ProjektName</a></h1>
                         Hier steht die Beschreibung des Projekts<br>
                         Hier steht die Beschreibung des Projekts<br>
                     </span>
+                    
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/javascript.jpg" alt="" width=1024px height=768px>
+                    <img src="img/keyboard.jpg" alt="" width=640px height=480px>
                     <span class="img-text">
-                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts <br>
+                        <h1><a href="">ProjektName</a></h1>
+                        Hier steht die Beschreibung des Projekts<br>
+                        Hier steht die Beschreibung des Projekts<br>
                     </span>
                     
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/csharp.jpg" alt="" width=1024px height=768px>
+                    <img src="img/ProjektDice.jpg" alt="" width=640px height=480px id=firstClone>
                     <span class="img-text">
-                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts <br>
-                    </span>
-                    
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/keyboard.jpg" alt="" width=1024px height=768px>
-                    <span class="img-text">
-                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts <br>
-                    </span>
-                    
-                </div>
-
-                <div class="img-wrap">
-                    <img src="img/java.jpg" alt="" width=1024px height=768px id=firstClone>
-                    <span class="img-text">
-                        <h1>ProjektName</h1>Hier steht die Beschreibung des Projekts <br> Hier steht die Beschreibung des
-                        Projekts <br>
+                        <h1><a href="">ProjektName</a></h1>
+                        Hier steht die Beschreibung des Projekts<br>
+                        Hier steht die Beschreibung des Projekts<br>
                     </span>
                     
                 </div>
