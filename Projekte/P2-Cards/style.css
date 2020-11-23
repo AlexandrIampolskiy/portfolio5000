@@ -1,0 +1,22 @@
+body {
+    background-color: green;
+}
+
+
+.visible {
+    display: flex;
+}
+
+.notvisible { 
+    display: none;
+}
+
+.card_wrap{
+    float: left;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+
