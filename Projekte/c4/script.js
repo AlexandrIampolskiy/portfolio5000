@@ -14,8 +14,9 @@ btn_reload.onclick = ()=> {
 for (i = 0; i < NUMBER_OF_PAIRS; i++) {
     let new_pair_div = document.createElement('div');
     new_pair_div.setAttribute('id', 'pair'+i);
+    new_pair_div.setAttribute('class', 'allPairs');
     PARENT_ELEMENT.appendChild(new_pair_div);
-    new_pair_div.style.cssText = "border: 2px solid black; background: red; display:  flex; width: 300px; margin: 15px;"
+    new_pair_div.style.cssText = "border: 2px solid green; border-radius: 25px; display: flex; width: 300px; margin: 15px; padding: 20px;"
 
     for (j = 0; j < CARDS_IN_PAIR; j++) {
         let new_card_div = document.createElement('div');
@@ -109,7 +110,7 @@ find_card_btn.onclick = () => {
     let all_checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     search();
     if (all_checkboxes.length !== 2) {
-        console.log("ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.")
+        alert("ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.")
     };
 }
 

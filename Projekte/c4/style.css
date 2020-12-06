@@ -1,14 +1,17 @@
 body {
-    background-color: green;
+    background-color: white;
 }
 
 .card_wrap {
-    display: flex;
-    max-width: 1400px;
+    display: table;
+}
+
+.allPairs {
+    
 }
 
 #row, #row0, #row1, #row2, #row3 {
-    display: flex;
+    display: column;
 }
 
 #btn_row, #btn_row0, #btn_row1, #btn_row2, #btn_row3{
