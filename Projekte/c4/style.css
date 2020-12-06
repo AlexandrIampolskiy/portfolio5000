@@ -1,0 +1,30 @@
+body {
+    background-color: green;
+}
+
+.card_wrap {
+    display: flex;
+    max-width: 1400px;
+}
+
+#row, #row0, #row1, #row2, #row3 {
+    display: flex;
+}
+
+#btn_row, #btn_row0, #btn_row1, #btn_row2, #btn_row3{
+    height: 40px;
+    margin-left: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+#find_card_btn {
+    height: 100px;
+    font-size: 15px;
+    padding: 0px 20px;
+}
+#right_cards {
+    display: flex;
+}
