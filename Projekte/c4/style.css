@@ -2,12 +2,9 @@ body {
     background-color: white;
 }
 
-.card_wrap {
-    display: flex;
-}
-
 .allPairs {
-    
+    display: flex;
+    float: left;
 }
 
 #row, #row0, #row1, #row2, #row3 {
@@ -17,6 +14,13 @@ body {
 #btn_row, #btn_row0, #btn_row1, #btn_row2, #btn_row3{
     height: 40px;
     margin-left: 25px;
+}
+
+.border_green0 {
+    border: 1px solid #116317
+}
+.border_green1 {
+    border: 1px solid #03fc88;
 }
 
 .hidden {

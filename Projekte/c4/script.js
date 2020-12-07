@@ -1,3 +1,5 @@
+
+
 const PARENT_ELEMENT = document.querySelector('.card_wrap')
 const PARENT_ELEMENT_TABLE = document.querySelector('#table')
 const NUMBER_OF_PAIRS = 10;
@@ -6,11 +8,13 @@ const ALL_CARDS = NUMBER_OF_PAIRS * CARDS_IN_PAIR;
 let cards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 let sort = cards.sort((a, b) => 0.5 - Math.random());
 
+/* btn fürs neuladen der (random)Karten */
 let btn_reload = document.querySelector('#btn_reload');
 btn_reload.onclick = ()=> {
     location.reload();
     };
 
+/* erstellung der Kartenpaare und der Karten */
 for (i = 0; i < NUMBER_OF_PAIRS; i++) {
     let new_pair_div = document.createElement('div');
     new_pair_div.setAttribute('id', 'pair'+i);
@@ -28,34 +32,45 @@ for (i = 0; i < NUMBER_OF_PAIRS; i++) {
     } 
 }
 
+/* checkbox(en) in ner schleife mit button zum anwählen */
 
 for (i = 0; i < 4; i++) {
-    let btn = document.querySelector('#btn_row' + i);
+    let btn_row = document.querySelector('#btn_row' + i);
     let counter = 0;
     let checkbox = document.querySelector('#check_row' + i);
     let second_checkbox = document.querySelector('#second_check_row' + i);
     let row = document.querySelector('#row' + i);
     
-    btn.onclick = function () {
+    /* addclasslist bei border geht niocht, nach 3 mal clicken kommt keine mehr... wtf */
+
+    btn_row.onclick = function () {
         counter++;
+        console.log(counter);
         if (counter == 1) {
             checkbox.classList.remove('hidden');
             checkbox.checked = true;
-            row.style.border = '3px solid black';
+            /* row.style.border = '3px solid #03fc88 '; */
+            row.classList.add('border_green0')
         } else if (counter == 2) {
             second_checkbox.classList.remove('hidden');
             second_checkbox.checked = true;
-            row.style.border = '3px solid red';
-        } else if (counter > 2) {
+            /* row.style.border = '3px solid #116317'; */
+            btn_row.value = "Entfernen";
+            row.classList.add('border_green1');
+            row.classList.remove('border_green0')
+        } else if (counter >= 2) {
             checkbox.classList.add('hidden');
             second_checkbox.classList.add('hidden');
             counter = 0;
             checkbox.checked = false;
             second_checkbox.checked = false;
-            row.style.border = "none";
+            row.classList.remove('border_green1')
+            btn_row.value = "Auswählen";   
         }
+
     }
 }
+
 
 function search() {
     let right_card0 = document.querySelector('#right_card0');
@@ -64,10 +79,15 @@ function search() {
     let checkbox1 = document.querySelector('#check_row1')
     let checkbox2 = document.querySelector('#check_row2')
     let checkbox3 = document.querySelector('#check_row3')
+
     let second_checkbox0 = document.querySelector('#second_check_row0')
     let second_checkbox1 = document.querySelector('#second_check_row1')
     let second_checkbox2 = document.querySelector('#second_check_row2')
     let second_checkbox3 = document.querySelector('#second_check_row3')
+
+    let codeready = ["#A1", "#A2", "#E1", "#E2", '#O1', '#O2', '#I1', '#I2', '#N1', '#N2', '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#T1', '#T2', '#G1', '#G2'];
+
+
 
     if (checkbox0.checked && second_checkbox0.checked) {                            /* doppelte */
         right_card0.style.cssText = document.querySelector('#A1').style.cssText;
@@ -100,18 +120,47 @@ function search() {
         right_card0.style.cssText = document.querySelector('#G1').style.cssText;
         right_card1.style.cssText = document.querySelector('#G2').style.cssText;
     }
-
-    
-
 }
 
+
 let find_card_btn = document.querySelector('#find_card_btn');
-find_card_btn.onclick = () => {
+find_card_btn.onclick = () => {window.scrollBy(100, 0)
     let all_checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     search();
     if (all_checkboxes.length !== 2) {
         alert("ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.")
-    };
+    } else {
+        window.scrollBy(0, 300);
+    }
+}
+
+/* let card_wrap = document.querySelector('#card_wrap');
+let find_card_btn = document.querySelector('#find_card_btn');
+let table = document.querySelector('#table')
+let btn_next = document.querySelector('#btn_next');
+btn_next.onclick = function() {
+    card_wrap.classList.add('hidden');
+    table.classList.remove('hidden');
+} 
+ */
+
+let btn_next = document.querySelector('#btn_next');
+btn_next.onclick = function() {
+    let card_wrap = document.querySelector('#card_wrap');
+    card_wrap.classList.add('hidden');
+    let table = document.querySelector('#table')
+    table.classList.remove('hidden');
+    let find_card_btn = document.querySelector('#find_card_btn');
+    find_card_btn.classList.remove('hidden');
+}
+
+
+let code = ["#N1", "#N2", "#A1", "#A2", '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#E1', '#E2', '#T1', '#T2', '#O1', '#O2', '#G1', '#G2', '#I1', '#I2' ];
+
+for (i = 0; i < code.length; i++) {
+    for(j = 0; j < 2; j++) {
+        document.querySelector(code[i]).style.cssText = document.querySelector('#pair' + Math.floor(i/2) + 'card'+ j).style.cssText;
+    }
 }
 
 
@@ -122,9 +171,47 @@ find_card_btn.onclick = () => {
 
 
 
-let code = ["#N1", "#N2", "#A1", "#A2", '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#E1', '#E2', '#T1', '#T2', '#O1', '#O2', '#G1', '#G2', '#I1', '#I2' ];
 
-document.querySelector('#N1').style.cssText = document.querySelector('#pair' + 0 + 'card' + 0).style.cssText;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* document.querySelector('#N1').style.cssText = document.querySelector('#pair' + 0 + 'card' + 0).style.cssText;
 document.querySelector('#N2').style.cssText = document.querySelector('#pair' + 0 + 'card' + 1).style.cssText;
 document.querySelector('#A1').style.cssText = document.querySelector('#pair' + 1 + 'card' + 0).style.cssText;
 document.querySelector('#A2').style.cssText = document.querySelector('#pair' + 1 + 'card' + 1).style.cssText;
@@ -143,7 +230,7 @@ document.querySelector('#O2').style.cssText = document.querySelector('#pair' + 7
 document.querySelector('#G1').style.cssText = document.querySelector('#pair' + 8 + 'card' + 0).style.cssText;
 document.querySelector('#G2').style.cssText = document.querySelector('#pair' + 8 + 'card' + 1).style.cssText;
 document.querySelector('#I1').style.cssText = document.querySelector('#pair' + 9 + 'card' + 0).style.cssText;
-document.querySelector('#I2').style.cssText = document.querySelector('#pair' + 9 + 'card' + 1).style.cssText;
+document.querySelector('#I2').style.cssText = document.querySelector('#pair' + 9 + 'card' + 1).style.cssText; */
 
 
 

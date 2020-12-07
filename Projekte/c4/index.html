@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="option1">
+    <div class="option0">
         <h2>Hallo, bitte merken Sie sich ein Paar aus den vorgeschlagenen Paaren und drücken Sie dann auf "WEITER".</h2>
         <input type="button" id='btn_next' value="WEITER"></button>
     </div>
@@ -20,11 +20,8 @@
     <div class="card_wrap" id="card_wrap">
     </div>
 
-    <div id="demo">deMO</div>
-    <h2>in welchen Rheien sind die 2 Karten versteckt?</h2>
-
-
-    <div id="table">
+    <div id="table" class="hidden">
+        <h2>in welchen Rheien sind die 2 Karten versteckt?</h2>
         <div id="row0">
             <div id="N1" class="tableCard"></div>
             <div id="A1" class="tableCard"></div>
@@ -79,7 +76,7 @@
             <input type="button" id="btn_row3" value="Auswählen">
         </div>
     </div> 
-    <input type="button" id="find_card_btn" value="ich habe meine Wah getroffen">
+    <input type="button" id="find_card_btn" class="hidden" value="ich habe zwei Karten ausgewählt">
     
     <div id="right_cards">
         <div id="right_card0"></div>
