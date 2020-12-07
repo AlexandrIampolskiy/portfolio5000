@@ -20,7 +20,7 @@ for (i = 0; i < NUMBER_OF_PAIRS; i++) {
     new_pair_div.setAttribute('id', 'pair'+i);
     new_pair_div.setAttribute('class', 'allPairs');
     PARENT_ELEMENT.appendChild(new_pair_div);
-    new_pair_div.style.cssText = "border: 2px solid green; border-radius: 25px; display: flex; width: 300px; margin: 5px; padding: 20px;"
+    new_pair_div.style.cssText = "border: 2px solid yellowgreen; border-radius: 25px; display: flex; width: 300px; margin: 5px; padding: 10px;"
 
     for (j = 0; j < CARDS_IN_PAIR; j++) {
         let new_card_div = document.createElement('div');
@@ -157,13 +157,14 @@ function search() {
 
 let find_card_btn = document.querySelector('#find_card_btn');
 find_card_btn.onclick = () => {
+    find_card_btn.classList.remove('hidden');
     let table = document.querySelector('#table');
     let all_checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     search();
     if (all_checkboxes.length !== 2) {
-        alert("Ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.")
+        alert("Ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.");
     } else {
-        table.classList.add('hidden')
+        table.classList.add('hidden');
         
     }
 }
