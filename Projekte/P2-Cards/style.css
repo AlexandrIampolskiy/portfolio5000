@@ -1,10 +1,10 @@
 body {
-    background-color: green;
+    background-color: white;
 }
 
-.card_wrap {
+.allPairs {
     display: flex;
-    max-width: 1400px;
+    float: left;
 }
 
 #row, #row0, #row1, #row2, #row3 {
@@ -16,6 +16,13 @@ body {
     margin-left: 25px;
 }
 
+.border_green0 {
+    border: 1px solid #116317
+}
+.border_green1 {
+    border: 1px solid #03fc88;
+}
+
 .hidden {
     display: none;
 }
@@ -24,4 +31,7 @@ body {
     height: 100px;
     font-size: 15px;
     padding: 0px 20px;
+}
+#right_cards {
+    display: flex;
 }
