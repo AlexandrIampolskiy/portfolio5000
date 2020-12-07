@@ -20,7 +20,7 @@ for (i = 0; i < NUMBER_OF_PAIRS; i++) {
     new_pair_div.setAttribute('id', 'pair'+i);
     new_pair_div.setAttribute('class', 'allPairs');
     PARENT_ELEMENT.appendChild(new_pair_div);
-    new_pair_div.style.cssText = "border: 2px solid green; border-radius: 25px; display: flex; width: 300px; margin: 15px; padding: 20px;"
+    new_pair_div.style.cssText = "border: 2px solid green; border-radius: 25px; display: flex; width: 300px; margin: 5px; padding: 20px;"
 
     for (j = 0; j < CARDS_IN_PAIR; j++) {
         let new_card_div = document.createElement('div');
@@ -52,6 +52,7 @@ for (i = 0; i < 4; i++) {
             /* row.style.border = '3px solid #03fc88 '; */
             row.classList.add('border_green0')
         } else if (counter == 2) {
+            
             second_checkbox.classList.remove('hidden');
             second_checkbox.checked = true;
             /* row.style.border = '3px solid #116317'; */
@@ -70,7 +71,40 @@ for (i = 0; i < 4; i++) {
 
     }
 }
+
 let codeready = ["#A1", "#A2", "#E1", "#E2", '#O1', '#O2', '#I1', '#I2', '#N1', '#N2', '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#T1', '#T2', '#G1', '#G2'];
+let code = ["#N1", "#N2", "#A1", "#A2", '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#E1', '#E2', '#T1', '#T2', '#O1', '#O2', '#G1', '#G2', '#I1', '#I2'];
+
+
+let pairCode =  [
+                ["#N1", "#N2"], ["#A1", "#A2"], ['#U1', '#U2'], ['#K1', '#K2'], ['#M1', '#M2'],
+                ['#E1', '#E2'], ['#T1', '#T2'], ['#O1', '#O2'], ['#G1', '#G2'], ['#I1', '#I2']
+                ];
+
+
+
+
+document.querySelector('#N1').style.cssText = document.querySelector('#pair' + 0 + 'card' + 0).style.cssText;
+document.querySelector('#N2').style.cssText = document.querySelector('#pair' + 0 + 'card' + 1).style.cssText;
+document.querySelector('#A1').style.cssText = document.querySelector('#pair' + 1 + 'card' + 0).style.cssText;
+document.querySelector('#A2').style.cssText = document.querySelector('#pair' + 1 + 'card' + 1).style.cssText;
+document.querySelector('#U1').style.cssText = document.querySelector('#pair' + 2 + 'card' + 0).style.cssText;
+document.querySelector('#U2').style.cssText = document.querySelector('#pair' + 2 + 'card' + 1).style.cssText;
+document.querySelector('#K1').style.cssText = document.querySelector('#pair' + 3 + 'card' + 0).style.cssText;
+document.querySelector('#K2').style.cssText = document.querySelector('#pair' + 3 + 'card' + 1).style.cssText;
+document.querySelector('#M1').style.cssText = document.querySelector('#pair' + 4 + 'card' + 0).style.cssText;
+document.querySelector('#M2').style.cssText = document.querySelector('#pair' + 4 + 'card' + 1).style.cssText;
+document.querySelector('#E1').style.cssText = document.querySelector('#pair' + 5 + 'card' + 0).style.cssText;
+document.querySelector('#E2').style.cssText = document.querySelector('#pair' + 5 + 'card' + 1).style.cssText;
+document.querySelector('#T1').style.cssText = document.querySelector('#pair' + 6 + 'card' + 0).style.cssText;
+document.querySelector('#T2').style.cssText = document.querySelector('#pair' + 6 + 'card' + 1).style.cssText;
+document.querySelector('#O1').style.cssText = document.querySelector('#pair' + 7 + 'card' + 0).style.cssText;
+document.querySelector('#O2').style.cssText = document.querySelector('#pair' + 7 + 'card' + 1).style.cssText;
+document.querySelector('#G1').style.cssText = document.querySelector('#pair' + 8 + 'card' + 0).style.cssText;
+document.querySelector('#G2').style.cssText = document.querySelector('#pair' + 8 + 'card' + 1).style.cssText;
+document.querySelector('#I1').style.cssText = document.querySelector('#pair' + 9 + 'card' + 0).style.cssText;
+document.querySelector('#I2').style.cssText = document.querySelector('#pair' + 9 + 'card' + 1).style.cssText;
+
 
 
 function search() {
@@ -123,12 +157,14 @@ function search() {
 
 let find_card_btn = document.querySelector('#find_card_btn');
 find_card_btn.onclick = () => {
+    let table = document.querySelector('#table');
     let all_checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     search();
     if (all_checkboxes.length !== 2) {
-        alert("ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.")
+        alert("Ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.")
     } else {
-        window.scrollBy(0, 300);
+        table.classList.add('hidden')
+        
     }
 }
 
@@ -144,49 +180,6 @@ btn_next.onclick = function() {
     let option0 = document.querySelector('.option0');
     option0.classList.add('hidden');
 }
-
-
-/* let code = ["#N1", "#N2", "#A1", "#A2", '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#E1', '#E2', '#T1', '#T2', '#O1', '#O2', '#G1', '#G2', '#I1', '#I2' ];
-
-for (i = 0; i < codeready.length; i++) {
-    for(j = 0; j < 2; j++) {
-        document.querySelector(code[i]).style.cssText = document.querySelector('#pair' + Math.floor(i/2) + 'card'+ j).style.cssText;
-    }
-}
- */
-
-
-
-document.querySelector('#N1').style.cssText = document.querySelector('#pair' + 0 + 'card' + 0).style.cssText;
-document.querySelector('#N2').style.cssText = document.querySelector('#pair' + 0 + 'card' + 1).style.cssText;
-document.querySelector('#A1').style.cssText = document.querySelector('#pair' + 1 + 'card' + 0).style.cssText;
-document.querySelector('#A2').style.cssText = document.querySelector('#pair' + 1 + 'card' + 1).style.cssText;
-document.querySelector('#U1').style.cssText = document.querySelector('#pair' + 2 + 'card' + 0).style.cssText;
-document.querySelector('#U2').style.cssText = document.querySelector('#pair' + 2 + 'card' + 1).style.cssText;
-document.querySelector('#K1').style.cssText = document.querySelector('#pair' + 3 + 'card' + 0).style.cssText;
-document.querySelector('#K2').style.cssText = document.querySelector('#pair' + 3 + 'card' + 1).style.cssText;
-document.querySelector('#M1').style.cssText = document.querySelector('#pair' + 4 + 'card' + 0).style.cssText;
-document.querySelector('#M2').style.cssText = document.querySelector('#pair' + 4 + 'card' + 1).style.cssText;
-document.querySelector('#E1').style.cssText = document.querySelector('#pair' + 5 + 'card' + 0).style.cssText;
-document.querySelector('#E2').style.cssText = document.querySelector('#pair' + 5 + 'card' + 1).style.cssText;
-document.querySelector('#T1').style.cssText = document.querySelector('#pair' + 6 + 'card' + 0).style.cssText;
-document.querySelector('#T2').style.cssText = document.querySelector('#pair' + 6 + 'card' + 1).style.cssText;
-document.querySelector('#O1').style.cssText = document.querySelector('#pair' + 7 + 'card' + 0).style.cssText;
-document.querySelector('#O2').style.cssText = document.querySelector('#pair' + 7 + 'card' + 1).style.cssText;
-document.querySelector('#G1').style.cssText = document.querySelector('#pair' + 8 + 'card' + 0).style.cssText;
-document.querySelector('#G2').style.cssText = document.querySelector('#pair' + 8 + 'card' + 1).style.cssText;
-document.querySelector('#I1').style.cssText = document.querySelector('#pair' + 9 + 'card' + 0).style.cssText;
-document.querySelector('#I2').style.cssText = document.querySelector('#pair' + 9 + 'card' + 1).style.cssText;
-
-
-
-
-
-
-
-
-
-
 
 
 
