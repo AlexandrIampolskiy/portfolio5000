@@ -156,8 +156,10 @@ function search() {
 
 
 let find_card_btn = document.querySelector('#find_card_btn');
+let right_card0 = document.querySelector('#right_card0');
+let right_card1 = document.querySelector('#right_card1');
 find_card_btn.onclick = () => {
-    find_card_btn.classList.remove('hidden');
+    
     let table = document.querySelector('#table');
     let all_checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     search();
@@ -165,7 +167,9 @@ find_card_btn.onclick = () => {
         alert("Ein Paar hat zwei Karten, bitte wählen Sie die Reihe(n) aus in der Ihre zwei Karten liegen.");
     } else {
         table.classList.add('hidden');
-        
+        find_card_btn.classList.remove('hidden');
+        right_card0.classList.remove('hidden');
+        right_card1.classList.remove('hidden');
     }
 }
 
