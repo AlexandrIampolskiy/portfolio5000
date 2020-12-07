@@ -70,6 +70,7 @@ for (i = 0; i < 4; i++) {
 
     }
 }
+let codeready = ["#A1", "#A2", "#E1", "#E2", '#O1', '#O2', '#I1', '#I2', '#N1', '#N2', '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#T1', '#T2', '#G1', '#G2'];
 
 
 function search() {
@@ -84,10 +85,7 @@ function search() {
     let second_checkbox1 = document.querySelector('#second_check_row1')
     let second_checkbox2 = document.querySelector('#second_check_row2')
     let second_checkbox3 = document.querySelector('#second_check_row3')
-
-    let codeready = ["#A1", "#A2", "#E1", "#E2", '#O1', '#O2', '#I1', '#I2', '#N1', '#N2', '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#T1', '#T2', '#G1', '#G2'];
-
-
+    
 
     if (checkbox0.checked && second_checkbox0.checked) {                            /* doppelte */
         right_card0.style.cssText = document.querySelector('#A1').style.cssText;
@@ -124,7 +122,7 @@ function search() {
 
 
 let find_card_btn = document.querySelector('#find_card_btn');
-find_card_btn.onclick = () => {window.scrollBy(100, 0)
+find_card_btn.onclick = () => {
     let all_checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     search();
     if (all_checkboxes.length !== 2) {
@@ -134,15 +132,6 @@ find_card_btn.onclick = () => {window.scrollBy(100, 0)
     }
 }
 
-/* let card_wrap = document.querySelector('#card_wrap');
-let find_card_btn = document.querySelector('#find_card_btn');
-let table = document.querySelector('#table')
-let btn_next = document.querySelector('#btn_next');
-btn_next.onclick = function() {
-    card_wrap.classList.add('hidden');
-    table.classList.remove('hidden');
-} 
- */
 
 let btn_next = document.querySelector('#btn_next');
 btn_next.onclick = function() {
@@ -152,66 +141,23 @@ btn_next.onclick = function() {
     table.classList.remove('hidden');
     let find_card_btn = document.querySelector('#find_card_btn');
     find_card_btn.classList.remove('hidden');
+    let option0 = document.querySelector('.option0');
+    option0.classList.add('hidden');
 }
 
 
-let code = ["#N1", "#N2", "#A1", "#A2", '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#E1', '#E2', '#T1', '#T2', '#O1', '#O2', '#G1', '#G2', '#I1', '#I2' ];
+/* let code = ["#N1", "#N2", "#A1", "#A2", '#U1', '#U2', '#K1', '#K2', '#M1', '#M2', '#E1', '#E2', '#T1', '#T2', '#O1', '#O2', '#G1', '#G2', '#I1', '#I2' ];
 
-for (i = 0; i < code.length; i++) {
+for (i = 0; i < codeready.length; i++) {
     for(j = 0; j < 2; j++) {
         document.querySelector(code[i]).style.cssText = document.querySelector('#pair' + Math.floor(i/2) + 'card'+ j).style.cssText;
     }
 }
+ */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* document.querySelector('#N1').style.cssText = document.querySelector('#pair' + 0 + 'card' + 0).style.cssText;
+document.querySelector('#N1').style.cssText = document.querySelector('#pair' + 0 + 'card' + 0).style.cssText;
 document.querySelector('#N2').style.cssText = document.querySelector('#pair' + 0 + 'card' + 1).style.cssText;
 document.querySelector('#A1').style.cssText = document.querySelector('#pair' + 1 + 'card' + 0).style.cssText;
 document.querySelector('#A2').style.cssText = document.querySelector('#pair' + 1 + 'card' + 1).style.cssText;
@@ -230,7 +176,26 @@ document.querySelector('#O2').style.cssText = document.querySelector('#pair' + 7
 document.querySelector('#G1').style.cssText = document.querySelector('#pair' + 8 + 'card' + 0).style.cssText;
 document.querySelector('#G2').style.cssText = document.querySelector('#pair' + 8 + 'card' + 1).style.cssText;
 document.querySelector('#I1').style.cssText = document.querySelector('#pair' + 9 + 'card' + 0).style.cssText;
-document.querySelector('#I2').style.cssText = document.querySelector('#pair' + 9 + 'card' + 1).style.cssText; */
+document.querySelector('#I2').style.cssText = document.querySelector('#pair' + 9 + 'card' + 1).style.cssText;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -35,3 +35,10 @@ body {
 #right_cards {
     display: flex;
 }
+
+#right_card0 {
+    background-color: green;
+}
+#right_card1 {
+    background-color: green;
+}
