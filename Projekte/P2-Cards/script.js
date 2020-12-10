@@ -140,7 +140,7 @@ function search() {
         right_card0.style.cssText = document.querySelector('#U1').style.cssText;
         right_card1.style.cssText = document.querySelector('#U2').style.cssText;
     } else if (checkbox0.checked && checkbox3.checked) {
-        right_card0.style.cssText = document.querySelector('#K2').style.cssText;
+        right_card0.style.cssText = document.querySelector('#K1').style.cssText;
         right_card1.style.cssText = document.querySelector('#K2').style.cssText;
     } else if (checkbox1.checked && checkbox2.checked) {
         right_card0.style.cssText = document.querySelector('#M1').style.cssText;
