@@ -145,26 +145,28 @@
                     <span class="img-text">
                         <h1><a href="Projekte/P1-Dice/index.html" target="_blank">Würfel</a></h1>
                         Würfeln im Browser<br> 
-                        HTML, CSS, und JavaScript<br>
+                        HTML, CSS, JavaScript<br>
                         Schwierigkeisstufe: Leicht<br>
                     </span>
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/css.jpg" alt="" width=640px height=480px>
+                    <img src="img/ProjektCards.jpg" alt="" width=640px height=480px>
                     <span class="img-text">
-                        <h1><a href="">ProjektName</a></h1>
-                        Hier steht die Beschreibung des Projekts<br>
-                        Hier steht die Beschreibung des Projekts<br>
+                        <h1><a href="Projekte/c7/index.html" target="_blank">Kartentrick</a></h1>
+                        Kartentrick<br>
+                        JavaScript, HTML, CSS <br>
+                        Schwierigkeisstufe: Schwer<br>
                     </span>
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/javascript.jpg" alt="" width=640px height=480px>
+                    <img src="img/clock.jpg" alt="" width=640px height=480px>
                     <span class="img-text">
-                        <h1><a href="">ProjektName</a></h1>
-                        Hier steht die Beschreibung des Projekts<br>
-                        Hier steht die Beschreibung des Projekts <br>
+                        <h1><a href="Projekte/P1-Dice/index.html" target="_blank">Uhr</a></h1>
+                        Eine Uhr im Browser <br>
+                        JavaScript, HTML, CSS <br>
+                        Schwierigkeisstufe: Mittel <br>
                     </span>
                     
                 </div>
