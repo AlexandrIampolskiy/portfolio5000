@@ -163,7 +163,7 @@
                 <div class="img-wrap">
                     <img src="img/clock.jpg" alt="" width=640px height=480px>
                     <span class="img-text">
-                        <h1><a href="Projekte/P1-Dice/index.html" target="_blank">Uhr</a></h1>
+                        <h1><a href="Projekte/P2-Clock/index.html" target="_blank">Uhr</a></h1>
                         Eine Uhr im Browser <br>
                         JavaScript, HTML, CSS <br>
                         Schwierigkeisstufe: Mittel <br>
