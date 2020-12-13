@@ -7,7 +7,6 @@
 
 .clock {
     box-shadow: -2px 2px 22px 15px rgba(0,0,0,0.91);
-
     margin: 50px auto;
     width: 300px;
     height: 300px;
@@ -72,17 +71,24 @@ h2 {
 }
 
 .clock .arrow.sec {
+    /* transition: all 1s; */
     width: 3px;
     height: 45%;
     background-color: red;
 }
 .clock .arrow.min {
+    /* transition: all 60s; */
     width: 7px;
     height: 40%;
     background-color: black;
 }
 .clock .arrow.hour {
+    /* transition: all 3600s; */
     width: 10px;
     height: 35%;
     background-color: black;
+}
+
+.clock .arrow.hour.hack {
+transition: all 1s;
 }

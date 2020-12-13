@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="clock">
-        <div class="arrow hour" data-hour-arrow></div>
-        <div class="arrow min" data-min-arrow></div>
-        <div class="arrow sec" data-sec-arrow></div>
+        <div class="arrow hour" id ="data-hour-arrow"></div>
+        <div class="arrow min" id="data-min-arrow"></div>
+        <div class="arrow sec" id ="data-sec-arrow"></div>
         <div class="number number1">1</div>
         <div class="number number2">2</div>
         <div class="number number3">3</div>
@@ -24,7 +24,12 @@
         <div class="number number11">11</div>
         <div class="number number12">12</div>
     </div>
-    <h2>Berlin</h2>
+    
+    <input type="button" value="Berlin" onclick="setTimeOffset(0)">
+    <input type="button" value="NewYork" onclick="setTimeOffset(-6)">
+    <input type="button" value="Moskau" onclick="setTimeOffset(2)">
+    <input type="button" value="Sydney" onclick="setTimeOffset(10)">
+    
     
     <script src="script.js"></script>
 </body>
