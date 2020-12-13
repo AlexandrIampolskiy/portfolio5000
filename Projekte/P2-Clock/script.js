@@ -4,8 +4,8 @@ const minArrow = document.querySelector('#data-min-arrow');
 const secArrow = document.querySelector('#data-sec-arrow');
 const btns = document.querySelectorAll('input[type="button"]');
 
-
 let timeOffset = 0;
+
 
 function init() {
     const currentLocalDate = new Date();
@@ -44,8 +44,11 @@ function setRotation(element, rotationRatio) {
     element.style.setProperty('--rotation', (rotationRatio * 360) % 360);
 }
 
-function setTimeOffset(offset) {
+function setTimeOffset(offset, city) {
+    let cityName = document.querySelector('.city');
+    cityName.innerHTML = city;
     btns.forEach(element => element.disabled = true);
+    btns.forEach(element => element.style = "display: none");
     hourArrow.classList.add('hack');
     timeOffset = offset;
     init();
@@ -53,13 +56,37 @@ function setTimeOffset(offset) {
         () => {
             hourArrow.classList.remove('hack');
             btns.forEach(element => element.disabled = false);
+            btns.forEach(element => element.style = "display: visible");
         }, 2000);
-
-
 }
+
+/* function hide() {
+    let addDetails = document.querySelector('.addDetails');
+    addDetails.classList.add('hidden');
+}
+
+function visible() {
+    let addDetails = document.querySelector('.addDetails');
+    addDetails.classList.remove('hidden');
+}
+
+function addCity() {
+    let parent_element = document.querySelector('.btns')
+    let cityName = document.querySelector('.cityName');
+    let timeZone = document.querySelector('.timeZone').value;
+    let new_input = document.createElement('input');
+    new_input.setAttribute('type', 'button');
+    new_input.setAttribute('value', cityName.value);
+    
+    
+    parent_element.appendChild(new_input);
+
+    init();
+    setClock();
+    
+} */
 
 init();
 setClock();
 setInterval(setClock, 1000);
-
 

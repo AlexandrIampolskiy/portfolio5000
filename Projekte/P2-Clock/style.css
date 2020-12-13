@@ -8,8 +8,8 @@
 .clock {
     box-shadow: -2px 2px 22px 15px rgba(0,0,0,0.91);
     margin: 50px auto;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     background-color: rgba(255, 255, 255, .8);
     border-radius: 50%;
     border: 2px solid black;
@@ -89,6 +89,27 @@ h2 {
     background-color: black;
 }
 
+.city {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btns {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.btns input{
+border-radius: 5px;
+padding: 3px;
+}
+
 .clock .arrow.hour.hack {
 transition: all 1s;
+}
+
+.hidden {
+    display: none;
 }
