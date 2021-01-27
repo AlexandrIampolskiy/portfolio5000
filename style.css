@@ -11,6 +11,24 @@
     
 }
 
+/* .h2NewCycle {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: lighter;
+    font-size: 1000px;
+} */
+
+.title {
+        font-family: 'News Cycle', sans-serif;
+        width: max-content;
+        font-size: 40px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 100px;
+        font-weight: lighter;
+        text-decoration: underline;
+}
+
+
 /* Nav */
 
 .nav-wrapper {
@@ -27,7 +45,15 @@
     font-weight: bold;
     color: black;
     padding-top: 10px;
+    transition: 1s;
 }
+
+.logo:hover {
+    color: greenyellow;
+    cursor: pointer;
+    
+}
+
 
 nav ul {
     padding-top: 20px;
@@ -58,10 +84,33 @@ nav li a {
 
 nav li a:hover {
     color: yellowgreen;
-    transition: 0.7s;
+    transition: 0.4s;
 }
 
 /* main img */
+
+/* Preload! für die Bilder */
+@media screen {
+    div#preloader {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+    }
+    div#preloader img {
+        display: block;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media print {
+    div#preloader,
+    div#preloader img {
+        visibility: hidden;
+        display: none;
+    }
+}
+
 .main-wrapper-img {
     width: 100%;
     height: 500px;
@@ -69,6 +118,44 @@ nav li a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: animate_img 100s infinite;
+    
+}
+
+@keyframes animate_img {
+    0% {
+        background-image: url("img/skyline.jpg");
+    }
+    10% {
+        background-image: url("img/buble.jpg");
+    }
+    20% {
+        background-image: url("img/pyrenees.jpg");
+    }
+    30% {
+        background-image: url("img/dive.jpg");
+    }
+    40% {
+        background-image: url("img/trees.jpg");
+    }
+    50% {
+        background-image: url("img/sunset.jpg");
+    }
+    60% {
+        background-image: url("img/satelite.jpg");
+    }
+    70% {
+        background-image: url("img/forest.jpg");
+    }
+    80% {
+        background-image: url("img/sea.jpg");
+    }
+    90% {
+        background-image: url("img/winter.jpg");
+    }
+    100% {
+        background-image: url("img/skyline.jpg");
+    }
 }
 
 /* main-text */
@@ -82,12 +169,7 @@ nav li a:hover {
 .main-wrapper-text {
     height: 460px;
     padding-top: 100px;
-    padding-bottom: 100px;
-    font-family: 'News Cycle', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
-    margin: 0 auto;
-    text-align: center;
+    padding-bottom: 20px;
     background: white;
 }
 
@@ -117,6 +199,9 @@ nav li a:hover {
 }
 
 /* main-cards */
+.main-wrapper-cards {
+    margin-bottom: 250px;
+}
 
 .portfolio-cards-wrapper {
     display: grid;
@@ -423,16 +508,6 @@ nav li a:hover {
 
 /* Slider ______________________________________________________ */
 
-    .slider h2{
-        font-family: 'News Cycle', sans-serif;
-        width: 150px;
-        font-size: 40px;
-        margin: auto;
-        margin-top: 140px;
-        margin-bottom: 20px;
-        
-        
-    }
 
     .carousel-container {
         width: 640px;
@@ -446,8 +521,8 @@ nav li a:hover {
         display: flex;
     }
 
-    .img-text h1  {
-    
+    .noPointer {
+        cursor: default;
     }
 
     .img-text h1 a {
@@ -463,22 +538,46 @@ nav li a:hover {
 
     #btnPrev {
         position: absolute;
-        top: 40%;
+        top: 37%;
         z-index: 10;
         left: 5%;
         font-size: 50px;
-        color: white;
         cursor: pointer;
+        animation: animate 5s linear infinite;
+        
     }
 
     #btnNext {
         position: absolute;
-        top: 40%;
+        top: 37%;
         z-index: 10;
         right: 5%;
         font-size: 50px;
-        color: white;
         cursor: pointer;
+        animation: animate 5s linear infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            color: rgb(255, 255, 255);
+        }
+
+        /* 25% {
+            color: rgb(107, 13, 87)
+        } */
+
+        50% {
+            color: black;
+        }
+
+        /* 75% {
+            color: greenyellow
+        } */
+
+        100% {
+            color: rgb(255, 255, 255);
+            
+        }
     }
 
     #btnNext:hover {
@@ -490,6 +589,8 @@ nav li a:hover {
         color: yellowgreen;;
         transition: 0.6s ease;
     }
+
+
 
     
 /* Form */
@@ -508,7 +609,7 @@ nav li a:hover {
     border-radius: 5px;
     display: flex;
     flex-direction: flex;
-    ; /*set by default */
+     /*set by default */
     box-shadow: 0 0 10px;
 }
 
@@ -786,6 +887,7 @@ hr {
 
     .logo {
         margin: auto;
+        
     }
 
     .nav-wrapper ul {

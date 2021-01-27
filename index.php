@@ -3,7 +3,31 @@
 ?>
 
 <main>
-    <section id="main-wrapper-img" class="main-wrapper-img"></section> <!-- bild unter dem nav -->
+<!-- Preload! für die Bilder  -->
+<div id="preloader">
+    <img src="img/skyline.jpg" alt="">
+    <img src="img/buble.jpg" alt="">
+    <img src="img/winter.jpg" alt="">
+    <img src="img/sunset.jpg" alt="">
+    <img src="img/satelite.jpg" alt="">
+    <img src="img/html.jpg" alt="">
+    <img src="img/css.jpg" alt="">
+    <img src="img/javascript.jpg" alt="">
+    <img src="img/php.jpg" alt="">
+    <img src="img/csharp.jpg" alt="">
+    <img src="img/java.jpg" alt="">
+    <img src="img/c++.jpg" alt="">
+    <img src="img/solidity.jpg" alt="">
+    <img src="img/keyboard.jpg" alt="">
+    <img src="img/sea.jpg" alt="">
+    <img src="img/trees.jpg" alt="">
+    <img src="img/pyrenees.jpg" alt="">
+    <img src="img/dive.jpg" alt="">
+    <img src="img/forest.jpg" alt="">
+    <img src="img/mountain.jpg" alt="">
+</div>
+
+    <section class="main-wrapper-img"></section> <!-- bild unter dem nav -->
     <!-- main text -->
     <section class="main-wrapper-text">
         <h2 class="welcome">Wilkommen auf meiner Bewerbungsmappe</h2> 
@@ -12,7 +36,9 @@
         </h4>
     </section>
     <!-- main cards -->
+    
     <section class="main-wrapper-cards">
+        <h2 class="title">Meine Erfahrung</h2>
         <div class="portfolio-cards-wrapper">
             <div class="portfolio-card-wrapper">
                 <div class="portfolio-card-image html"></div>
@@ -126,7 +152,7 @@
     </section>
 <!-- SLIDER Projekte -->
     <section class="slider">
-        <h2> Projekte </h2>
+        <h2 class="title">Meine Projekte</h2>
         <div class="carousel-container">
             <i id=btnPrev class="fas fa-arrow-left"></i><!-- fa-arrow-left -->
             <i id=btnNext class="fas fa-arrow-right"></i><!-- fa-arrow-right -->
@@ -141,7 +167,7 @@
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/ProjektDice.jpg" alt="" width=640px height=480px>
+                    <a class="noPointer" href="Projekte/P1-Dice/index.html" target="_blank"><img src="img/ProjektDice.jpg" alt="" width=640px height=480px></a>
                     <span class="img-text">
                         <h1><a href="Projekte/P1-Dice/index.html" target="_blank">Würfel</a></h1>
                         Würfeln im Browser<br> 
@@ -151,9 +177,9 @@
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/ProjektCards.jpg" alt="" width=640px height=480px>
+                    <a class="noPointer" href="Projekte//P2-Cards/index.html" target="_blank"><img src="img/ProjektCards.jpg" alt="" width=640px height=480px></a>
                     <span class="img-text">
-                        <h1><a href="Projekte/c7/index.html" target="_blank">Kartentrick</a></h1>
+                        <h1><a href="Projekte/P2-Cards/index.html" target="_blank">Kartentrick</a></h1>
                         Kartentrick<br>
                         JavaScript, HTML, CSS <br>
                         Schwierigkeisstufe: Schwer<br>
@@ -161,9 +187,9 @@
                 </div>
 
                 <div class="img-wrap">
-                    <img src="img/clock.jpg" alt="" width=640px height=480px>
+                    <a class="noPointer" href="Projekte/P3-Clock/index.html" target="_blank"><img src="img/clock.jpg" alt="" width=640px height=480px></a>
                     <span class="img-text">
-                        <h1><a href="Projekte/P2-Clock/index.html" target="_blank">Uhr</a></h1>
+                        <h1><a href="Projekte/P3-Clock/index.html" target="_blank">Uhr</a></h1>
                         Eine Uhr im Browser <br>
                         JavaScript, HTML, CSS <br>
                         Schwierigkeisstufe: Mittel <br>
@@ -206,6 +232,7 @@
 
         <!-- contact-Form -->
     <section class="contact-form">
+        <h2 class="title">Kontakt</h2>
         <div class="contact-form-wrapper">
             <div class="cf-input-fields">
                 <input type="text" class="input" placeholder="Name">
