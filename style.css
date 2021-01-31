@@ -138,7 +138,7 @@ nav li a:hover {
     
 }
 
-@keyframes animate_img {
+/* @keyframes animate_img {
     0% {
         background-image: url("img/palmb.jpg");
     }
@@ -173,11 +173,10 @@ nav li a:hover {
         background-image: url("img/palmb.jpg");
     }
 }
+ */
 
 
-
-
-/* @keyframes animate_img {
+@keyframes animate_img {
     0% {
         background-image: url("img/skyline.jpg");
     }
@@ -211,7 +210,7 @@ nav li a:hover {
     100% {
         background-image: url("img/skyline.jpg");
     }
-} */
+}
 
 /* main-text */
 
