@@ -5,11 +5,8 @@
 <main>
 <!-- Preload! für die Bilder  -->
 <div id="preloader">
-    <img src="img/skyline.jpg" alt="">
-    <img src="img/buble.jpg" alt="">
-    <img src="img/winter.jpg" alt="">
-    <img src="img/sunset.jpg" alt="">
-    <img src="img/satelite.jpg" alt="">
+    
+    <!-- Programmkioersprachen Pics -->
     <img src="img/html.jpg" alt="">
     <img src="img/css.jpg" alt="">
     <img src="img/javascript.jpg" alt="">
@@ -19,12 +16,47 @@
     <img src="img/c++.jpg" alt="">
     <img src="img/solidity.jpg" alt="">
     <img src="img/keyboard.jpg" alt="">
+
+    <!-- main Pics Download -->
+    <!-- <img src="img/skyline.jpg" alt="">
+    <img src="img/buble.jpg" alt="">
+    <img src="img/winter.jpg" alt="">
+    <img src="img/sunset.jpg" alt="">
+    <img src="img/satelite.jpg" alt="">
     <img src="img/sea.jpg" alt="">
     <img src="img/trees.jpg" alt="">
     <img src="img/pyrenees.jpg" alt="">
     <img src="img/dive.jpg" alt="">
     <img src="img/forest.jpg" alt="">
-    <img src="img/mountain.jpg" alt="">
+    <img src="img/mountain.jpg" alt=""> -->
+
+    <!-- main Pics Eigene -->
+    <img src="img/berlin.jpg" alt="">
+    <img src="img/brisat.jpg" alt="">
+    <img src="img/flugbahn.jpg" alt="">
+    <img src="img/h1.jpg" alt="">
+    <img src="img/hafen.jpg" alt="">
+    <img src="img/hotel.jpg" alt="">
+    <img src="img/koeln.jpg" alt="">
+    <img src="img/mship.jpg" alt="">
+    <img src="img/tonisee.jpg" alt="">
+    
+
+    <!-- <img src="img/bau.jpg" alt="">
+    <img src="img/mc2.jpg" alt="">
+    <img src="img/barcelonapalm.jpg" alt="">
+    <img src="img/mc1.jpg" alt="">
+    <img src="img/land2.jpg" alt="">
+    <img src="img/flug.jpg" alt="">
+    <img src="img/msonne.jpg" alt="">
+    <img src="img/p1.jpg" alt="">
+    <img src="img/palmb.jpg" alt="">
+    <img src="img/a380.jpg" alt="">
+    <img src="img/bturm.jpg" alt="">
+    <img src="img/riverice.jpg" alt="">
+    <img src="img/skyflug.jpg" alt="">
+    <img src="img/view.jpg" alt="">
+    <img src="img/trptower.jpg" alt=""> -->
 </div>
 
     <section class="main-wrapper-img"></section> <!-- bild unter dem nav -->
@@ -38,7 +70,7 @@
     <!-- main cards -->
     
     <section class="main-wrapper-cards">
-        <h2 class="title">Meine Erfahrung</h2>
+        <h2 class="title"></h2>
         <div class="portfolio-cards-wrapper">
             <div class="portfolio-card-wrapper">
                 <div class="portfolio-card-image html"></div>
@@ -152,7 +184,7 @@
     </section>
 <!-- SLIDER Projekte -->
     <section class="slider">
-        <h2 class="title">Meine Projekte</h2>
+        <h2 class="title">Projekte</h2>
         <div class="carousel-container">
             <i id=btnPrev class="fas fa-arrow-left"></i><!-- fa-arrow-left -->
             <i id=btnNext class="fas fa-arrow-right"></i><!-- fa-arrow-right -->
@@ -231,19 +263,26 @@
     </section>
 
         <!-- contact-Form -->
+
+   <!--  <?php
+        print_r($_POST);
+    ?> -->
+
     <section class="contact-form">
         <h2 class="title">Kontakt</h2>
-        <div class="contact-form-wrapper">
-            <div class="cf-input-fields">
-                <input type="text" class="input" placeholder="Name">
-                <input type="text" class="input" placeholder="Email">
-                <input type="text" class="input" placeholder="Tel.">
+        <form action="index.php" method="POST">
+            <div class="contact-form-wrapper">
+                <div class="cf-input-fields">
+                    <input type="text" id="name" name="name" class="input" placeholder="Name" required>
+                    <input type="text" id="email" name="email" class="input" placeholder="E-Mail" required>
+                    <input type="text" id="tel" name="tel" class="input" placeholder="Tel." required>
+                </div>
+                <div class="cf-msg">
+                    <textarea id="msg" name="msg" placeholder="Nachricht" required></textarea>
+                    <button class="cf-btn">Senden</button>
+                </div>
             </div>
-            <div class="cf-msg">
-                <textarea placeholder="Nachricht"></textarea>
-                <div class="cf-btn input">Abschicken</div>
-            </div>
-        </div>
+        </form>
     </section>
 
 </main>

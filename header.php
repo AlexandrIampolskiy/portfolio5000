@@ -23,15 +23,17 @@ session_start();
     <header>
         <nav>
             <div class="nav-wrapper">
-                <div class="logo" onClick="document.location.href='index.php'">
+                <div id="logo"  class="logo" onClick="document.location.href='index.php'">
                     Alexandr Iampolskaia
                 </div>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="bewerbung.php">Bewerbung</a></li>
-                    <li><a href="lebenslauf.php">Lebenslauf</a></li>
-                    <li><a href="projekte.php">Projekte</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                <ul id="ulLinks">
+                    <li onClick="document.location.href='index.php'">
+                        <a href="index.php"> Home</a>
+                    </li>
+                    <li onClick="document.location.href='bewerbung.php'"><a href="bewerbung.php">Bewerbung</a></li>
+                    <li onClick="document.location.href='lebenslauf.php'"><a href="lebenslauf.php">Lebenslauf</a></li>
+                    <li onClick="document.location.href='projekte.php'"><a href="projekte.php">Projekte</a></li>
+                    <li onClick="document.location.href='logout.php'"><a href="logout.php">Logout</a></li>
                 </ul>
             </div>
         </nav>

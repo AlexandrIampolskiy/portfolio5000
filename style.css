@@ -25,11 +25,14 @@
         margin-top: 0px;
         margin-bottom: 100px;
         font-weight: lighter;
-        text-decoration: underline;
+        
 }
 
 
 /* Nav */
+
+/* DEN HOVER EFFEC>T> ANPASSEN"!!!!! MOBILEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+ */
 
 .nav-wrapper {
     background-color: white;
@@ -40,51 +43,64 @@
 }
 
 .logo {
+    position: relative;
+    margin-left: 20px;
+    letter-spacing: 6px;
     font-family: 'News Cycle', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: black;
-    padding-top: 10px;
-    transition: 1s;
+    transition: 0.7s ease;
+    top: 10px;
+    text-transform: uppercase;
 }
 
 .logo:hover {
-    color: greenyellow;
     cursor: pointer;
-    
+    letter-spacing: 6.5px;
 }
 
 
 nav ul {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     list-style-type: none;
+    text-align: center;
 }
 
 nav li {
+    
     border-bottom: 1px solid transparent;
-    padding: 10px;
+    padding: 20px 30px 20px 30px;
 }
 
 nav li:hover {
-    border-bottom: 1px solid black;
-    transition: 1.4s;
     
+    border-bottom: 1px solid black;
+    transition: .6s ease;
+    cursor: pointer;
 }
 
 nav li a {
-    font-size: 20px;
-    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: lighter;
     text-decoration: none;
     color: black;
-    padding: 20px;
-
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    text-transform: uppercase;
 }
 
 nav li a:hover {
-    color: yellowgreen;
-    transition: 0.4s;
+    background-color:rgba(0, 0, 0, 0.815);
+    color: white;
+    box-shadow: red;
+    transition: 0.4s ease;
+    font-weight: normal;
+    padding: 0px 20px 0px 20px;
+    
 }
 
 /* main img */
@@ -124,6 +140,45 @@ nav li a:hover {
 
 @keyframes animate_img {
     0% {
+        background-image: url("img/palmb.jpg");
+    }
+    10% {
+        background-image: url("img/brisat.jpg");
+    }
+    20% {
+        background-image: url("img/berlin.jpg");
+    }
+    30% {
+        background-image: url("img/tonisee.jpg");
+    }
+    40% {
+        background-image: url("img/mship.jpg");
+    }
+    50% {
+        background-image: url("img/flugbahn.jpg");
+    }
+    60% {
+        background-image: url("img/h1.jpg");
+    }
+    70% {
+        background-image: url("img/hafen.jpg");
+    }
+    80% {
+        background-image: url("img/hotel.jpg");
+    }
+    90% {
+        background-image: url("img/koeln.jpg");
+    }
+    100% {
+        background-image: url("img/palmb.jpg");
+    }
+}
+
+
+
+
+/* @keyframes animate_img {
+    0% {
         background-image: url("img/skyline.jpg");
     }
     10% {
@@ -156,7 +211,7 @@ nav li a:hover {
     100% {
         background-image: url("img/skyline.jpg");
     }
-}
+} */
 
 /* main-text */
 
@@ -164,6 +219,10 @@ nav li a:hover {
     font-family: 'News Cycle', sans-serif;
     font-weight: 200;
     padding-bottom: 2%;
+}
+
+h2.welcome {
+    
 }
 
 .main-wrapper-text {
@@ -638,6 +697,8 @@ nav li a:hover {
 }
 
 .cf-btn {
+    font-size: large;
+    width: 100%;
     background: gold;
     cursor: pointer;
     text-align: center;
@@ -805,7 +866,21 @@ hr {
     background-color: yellow;
 }
 
+@media screen and (max-width: 1550px) {
+    nav li {
+    padding: 5px 10px 5px 10px;
+    }
 
+    nav li a {
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+
+    .logo {
+    top: 50%;
+    font-size: 26px;
+    }
+}
 
 @media screen and (max-width: 1250px) {
     .nav-wrapper ul {

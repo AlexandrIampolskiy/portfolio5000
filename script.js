@@ -145,3 +145,5 @@ carouselSlide.addEventListener('transitionend', () => {
         carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
     }
 });
+
+
