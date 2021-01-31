@@ -18,7 +18,7 @@
     <img src="img/keyboard.jpg" alt="">
 
     <!-- main Pics Download -->
-    <!-- <img src="img/skyline.jpg" alt="">
+    <img src="img/skyline.jpg" alt="">
     <img src="img/buble.jpg" alt="">
     <img src="img/winter.jpg" alt="">
     <img src="img/sunset.jpg" alt="">
@@ -28,10 +28,10 @@
     <img src="img/pyrenees.jpg" alt="">
     <img src="img/dive.jpg" alt="">
     <img src="img/forest.jpg" alt="">
-    <img src="img/mountain.jpg" alt=""> -->
+    <img src="img/mountain.jpg" alt="">
 
     <!-- main Pics Eigene -->
-    <img src="img/berlin.jpg" alt="">
+    <!-- <img src="img/berlin.jpg" alt="">
     <img src="img/brisat.jpg" alt="">
     <img src="img/flugbahn.jpg" alt="">
     <img src="img/h1.jpg" alt="">
@@ -39,7 +39,7 @@
     <img src="img/hotel.jpg" alt="">
     <img src="img/koeln.jpg" alt="">
     <img src="img/mship.jpg" alt="">
-    <img src="img/tonisee.jpg" alt="">
+    <img src="img/tonisee.jpg" alt=""> -->
     
 
     <!-- <img src="img/bau.jpg" alt="">
