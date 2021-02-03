@@ -8,9 +8,9 @@
     outline: none;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Raleway', sans-serif; 
-   /*  font-family: 'Times New Roman', Times, sans-serif; */
-    
+    /*  font-family: 'Times New Roman', Times, sans-serif; */
+    /* font-family: 'News Cycle', sans-serif; */
+    /* font-family: 'Bebas Neue', cursive; */
 }
 
 /* .h2NewCycle {
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    /* border-bottom: 1px solid gold; */
+    padding-bottom: 100px;
 }
 
 .logo {
@@ -218,10 +218,9 @@ h2.welcome {
 }
 
 .typing-wrapper-text {
-    height: 400px;
-}
-
-.typing-wrapper-text {
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 600px;
     font-family: 'Bebas Neue', cursive;
     /* font-family: 'News Cycle', sans-serif; */
     font-size: 40px;
@@ -310,6 +309,7 @@ h2.welcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     align-items: center; 
     height: 100%;
     text-align: center;
@@ -327,6 +327,15 @@ h2.welcome {
 .card-content-logo {
     color: white;
     font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+:hover.card-content-logo {
+    transition: 0.5s;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .card-content-logo img {
@@ -567,6 +576,8 @@ h2.welcome {
         margin: auto;
         overflow: hidden;
         position: relative;
+        border-radius: 5px;
+        box-shadow: 0 0 10px;
         
     }
 
@@ -579,14 +590,23 @@ h2.welcome {
     }
 
     .img-text h1 a {
-        text-align: right;
+        display: block;
+        width: 100%;
+        text-align: center;
         text-decoration: none;
-        color: black;
+        color: white;
         font-size: 40px;
+        padding:10px;
+        background-color: black;
+        margin-bottom: 10px;
     }
 
-    .img-text {
-        width: 100px;
+    .projektDetail {
+        padding-left: 10px;
+    }
+
+    .projektDetail:last-child {
+        padding-bottom: 10px;
     }
 
     #btnPrev {
@@ -615,17 +635,13 @@ h2.welcome {
             color: rgb(255, 255, 255);
         }
 
-        /* 25% {
-            color: rgb(107, 13, 87)
-        } */
-
-        50% {
+        25% {
             color: black;
         }
 
-        /* 75% {
-            color: greenyellow
-        } */
+        50% {
+            color: yellowgreen;
+        }
 
         100% {
             color: rgb(255, 255, 255);
@@ -634,13 +650,14 @@ h2.welcome {
     }
 
     #btnNext:hover {
-        color: yellowgreen;;
+        color: yellowgreen;
         transition: 0.6s ease-in-out;
     }
 
     #btnPrev:hover {
-        color: yellowgreen;;
+        color: yellowgreen;
         transition: 0.6s ease;
+        
     }
 
 
@@ -946,7 +963,11 @@ hr {
 
     .carousel-container {
         width: 400px;
-        margin-top: 150px;
+        
+    }
+
+    .img-text h1 a {
+        text-align: left;
     }
 
 
@@ -1001,7 +1022,7 @@ hr {
 
     .welcome {
         margin-top: 80px;
-        font-size: 40px;
+        margin: 0 auto;
     }
 
     .imgWelcome:hover {
@@ -1012,10 +1033,21 @@ hr {
         background-color: white;
     }
 
+    .typing-wrapper-text {
+        
+        padding-top: 20px;
+        padding-bottom: 400px;
+        font-family: 'Bebas Neue', cursive;
+        /* font-family: 'News Cycle', sans-serif; */
+        font-size: 40px;
+        font-weight: 200;
+        margin: 0 auto;
+        text-align: center;
+        background: white;
+}
 
     .carousel-container {
         width: 300px;
-        margin-top: 150px;
     }
 
     .nav-wrapper .logo {
@@ -1072,8 +1104,20 @@ hr {
         max-width: 200px;
         font-size: 22px;
     }
+    .typing-wrapper-text {
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 400px;
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'News Cycle', sans-serif; */
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+}
 
-    .welcome {
+    /* .welcome {
         max-width: 200px;
         font-size: 25px;        
     }
@@ -1086,7 +1130,15 @@ hr {
     .welcome-autotype span.txt {
         max-width: 200px;
         font-size: 22px;
+    } */
+
+    .card-content-logo {
+        font-size: 40px;
     }
+    :hover.card-content-logo {
+    transition: 0.5s;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
 
 }
 

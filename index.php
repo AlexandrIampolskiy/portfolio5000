@@ -122,7 +122,7 @@
             <div class="portfolio-card-wrapper">
                 <div class="portfolio-card-image cpp"></div>
                 <div class="card-content-wrapper">
-                    <div class="card-content-logo">C++<!-- <img src="c++.png" alt=""> --></div>
+                    <div class="card-content-logo">C++<!-- <img src="png/c++.png"  alt=""-->></div>
                     <div class="card-content-text">Hier steht etwas über meine Erfahrung mit C++</div>
                     <div class="skills">
                         <li>
@@ -174,34 +174,33 @@
                 </div>
 
                 <div class="img-wrap">
-                    <a class="noPointer" href="Projekte/P1-Dice/index.html" target="_blank"><img src="img/ProjektDice.jpg" alt="" width=640px height=480px></a>
+                    <a class="noPointer" href="Projekte/P3-Clock/index.html" target="_blank"><img src="img/clock.jpg" alt="" width=640px height=480px></a>
                     <span class="img-text">
-                        <h1><a href="Projekte/P1-Dice/index.html" target="_blank">Würfel</a></h1>
-                        Würfeln im Browser<br> 
-                        HTML, CSS, JavaScript<br>
-                        Schwierigkeisstufe: Leicht<br>
+                        <h1><a href="Projekte/P3-Clock/index.html" target="_blank">Uhr</a></h1>
+                        <p class="projektDetail">Eine Uhr im Browser</p>   
+                        <p class="projektDetail">JavaScript, HTML, CSS</p>   
+                        <p class="projektDetail">Schwierigkeisstufe: Mittel</p>  
                     </span>
                 </div>
-
+                
                 <div class="img-wrap">
                     <a class="noPointer" href="Projekte//P2-Cards/index.html" target="_blank"><img src="img/ProjektCards.jpg" alt="" width=640px height=480px></a>
                     <span class="img-text">
                         <h1><a href="Projekte/P2-Cards/index.html" target="_blank">Kartentrick</a></h1>
-                        Kartentrick<br>
-                        JavaScript, HTML, CSS <br>
-                        Schwierigkeisstufe: Schwer<br>
+                        <p class="projektDetail">Kartentrick</p>   
+                        <p class="projektDetail">JavaScript, HTML, CSS</p>   
+                        <p class="projektDetail">Schwierigkeisstufe: Schwer</p>  
                     </span>
                 </div>
 
                 <div class="img-wrap">
-                    <a class="noPointer" href="Projekte/P3-Clock/index.html" target="_blank"><img src="img/clock.jpg" alt="" width=640px height=480px></a>
+                    <a class="noPointer" href="Projekte/P1-Dice/index.html" target="_blank"><img src="img/ProjektDice.jpg" alt="" width=640px height=480px></a>
                     <span class="img-text">
-                        <h1><a href="Projekte/P3-Clock/index.html" target="_blank">Uhr</a></h1>
-                        Eine Uhr im Browser <br>
-                        JavaScript, HTML, CSS <br>
-                        Schwierigkeisstufe: Mittel <br>
+                        <h1><a href="Projekte/P1-Dice/index.html" target="_blank">Würfel</a></h1>
+                        <p class="projektDetail">Würfeln im Browser</p>   
+                        <p class="projektDetail">HTML, CSS, JavaScript</p>   
+                        <p class="projektDetail">Schwierigkeisstufe: Leicht</p>   
                     </span>
-                    
                 </div>
 
                 <div class="img-wrap">
@@ -239,7 +238,7 @@
 
         <!-- contact-Form -->
 
-   <!--  <?php
+    <!--  <?php
         print_r($_POST);
     ?> -->
 
