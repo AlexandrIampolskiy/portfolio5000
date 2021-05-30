@@ -30,6 +30,24 @@
         
 }
 
+/* login */
+
+.loginField {
+    margin: 150px 
+}
+
+.loginField h2 {
+    color: black;
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+}
+
+.loginForm {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
 
 /* Nav */
 
@@ -136,7 +154,7 @@ nav li a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: animate_img 100s infinite;
+    animation: animate_img 70s infinite;
     
 }
 
@@ -146,7 +164,7 @@ nav li a:hover {
         background-image: url("img/skyline.jpg");
     }
     10% {
-        background-image: url("img/buble.jpg");
+        background-image: url("img/wm.jpg");
     }
     20% {
         background-image: url("img/pyrenees.jpg");
@@ -213,9 +231,7 @@ nav li a:hover {
     padding: 0 30px;
 }
 
-h2.welcome {
-    
-}
+
 
 .typing-wrapper-text {
     height: 100px;
@@ -232,8 +248,8 @@ h2.welcome {
 
 .welcome-autotype {
     margin: 0 auto;
-    font-family: 'Bebas Neue', cursive;
-    /* font-family: 'News Cycle', sans-serif; */
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'News Cycle', sans-serif;
 }
 
 .txt-type span {
@@ -253,6 +269,11 @@ h2.welcome {
 /* main-cards */
 .main-wrapper-cards {
     margin-bottom: 250px;
+}
+
+.title {
+    margin-bottom: 75px;
+    text-decoration: underline;
 }
 
 .portfolio-cards-wrapper {
@@ -293,8 +314,8 @@ h2.welcome {
 .portfolio-card-image.java {
     background-image: url("img/java.jpg");
 }
-.portfolio-card-image.cpp {
-    background-image: url("img/c++.jpg");
+.portfolio-card-image.sql {
+    background-image: url("img/sql.jpg");
 }
 .portfolio-card-image.solidity {
     background-image: url("img/solidity.jpg");
@@ -306,12 +327,15 @@ h2.welcome {
 .card-content-wrapper {
     position: absolute;
     top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
     align-items: center; 
-    height: 100%;
+    
     text-align: center;
     padding-left: 100px;  /* bei screen alle -x200 padding reduziern */
     padding-right: 100px; /* bei screen alle -x200 padding reduziern */
@@ -355,11 +379,16 @@ h2.welcome {
 }
 
 .card-content-wrapper:hover .skills {
-    width: 100%;
+    width: 300px;
     margin: 0 auto;
     color: white;
     list-style: none;
     transition: 1s;
+}
+
+.card-content-wrapper .skills h5 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .card-content-wrapper:hover .skills li {
@@ -408,9 +437,9 @@ h2.welcome {
     width: 25%; /* in den @keyframes anpassen bei 100% */
     animation: java 2s;
 }
-.card-content-wrapper:hover .cpp {
-    width: 1%; /* in den @keyframes anpassen bei 100% */
-    animation: cpp 2s;
+.card-content-wrapper:hover .sql {
+    width: 70%; /* in den @keyframes anpassen bei 100% */
+    animation: sql 2s;
 }
 .card-content-wrapper:hover .solidity {
     width: 5%; /* in den @keyframes anpassen bei 100% */
@@ -440,43 +469,12 @@ h2.welcome {
     visibility: hidden;
 }
 
-/* Progress-Bar */
-
-/* .skills {
-    width: 100%;
-    margin: 0 auto;
-    color: white;
-    list-style: none;
-} */
-
-/* .skills li {
-    margin: 20px 0;
-} */
 
 .skills li {
     color: transparent;
 }
 
-/* .bar {
-    background: #353b48;
-    display: block;
-    height: 20px;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow:  0 0 10px lightgreen /* #2187e7b3; 
-} */
 
-/* .bar span {
-    height: 20px;
-    float: left;
-    background: lightgreen /* #2187e7; 
-} */
-
-/* .html {
-    width: 75%;
-    animation: html 2.5s;
-} */
 @keyframes html {
     0% {
         width: 0%;
@@ -537,13 +535,13 @@ h2.welcome {
     }
 }
 
-@keyframes cpp {
+@keyframes sql {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 1%;
+        width: 70%;
     }
 }
 
@@ -663,7 +661,7 @@ h2.welcome {
 
 
     
-/* Form */
+/* Kontakt Form */
 
 .contact-form {
     margin-top: 130px;
@@ -704,7 +702,7 @@ h2.welcome {
 .cf-msg textarea {
     width: 100%;
     text-align: initial;
-    height: 212px;
+    height: 208px;
 }
 
 .cf-btn {
@@ -1115,7 +1113,11 @@ hr {
     margin: 0 auto;
     text-align: center;
     background: white;
-}
+    }
+
+    .carousel-container {
+        width: 270px;
+    }
 
     /* .welcome {
         max-width: 200px;
@@ -1135,10 +1137,11 @@ hr {
     .card-content-logo {
         font-size: 40px;
     }
+
     :hover.card-content-logo {
     transition: 0.5s;
     font-size: 50px;
     font-family: 'Bebas Neue', cursive;
+    }
 
 }
-

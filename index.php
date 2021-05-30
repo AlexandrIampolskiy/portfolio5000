@@ -17,7 +17,7 @@
 
         <!-- main Pics Download -->
         <img src="img/skyline.jpg" alt="">
-        <img src="img/buble.jpg" alt="">
+        <img src="img/wm.jpg" alt="">
         <img src="img/winter.jpg" alt="">
         <img src="img/sunset.jpg" alt="">
         <img src="img/satelite.jpg" alt="">
@@ -39,22 +39,22 @@
     <section class="typing-wrapper-text">
         <h2 class="welcome">Hier können Sie sich</h2> 
         <div class="welcome-autotype">sehr gerne
-        <span class="txt-type" data-wait="3000" data-words='["meine Bewerungsunterlagen einsehen.", "einen Überblick über meine Erfahrung und meine Projekte verschaffen."]'></span>
+        <span class="txt-type" data-wait="3000" data-words='["meine Bewerungsunterlagen asehen.", "einen Überblick über meine Erfahrung und meine Projekte verschaffen."]'></span>
     </div>
     </section>
     <!-- main cards -->
     
     <section class="main-wrapper-cards">
-        <h2 class="title"></h2>
+        <h2 class="title">Erfahrung</h2>
         <div class="portfolio-cards-wrapper">
             <div class="portfolio-card-wrapper">
                 <div class="portfolio-card-image html"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">HTML<!-- <img src="css.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit HTML</div>
+                    <div class="card-content-text"></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>HTML progress</h5> --><span class="bar"><span class="html"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="html"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -63,10 +63,10 @@
                 <div class="portfolio-card-image css"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">CSS<!-- <img src="css.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit CSS</div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit CSS --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>CSS progress</h5> --><span class="bar"><span class="css"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="css"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -75,10 +75,10 @@
                 <div class="portfolio-card-image js"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Java Script<!-- <img src="css.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit JavaScript</div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit JavaScript --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>Java Script progress</h5> --><span class="bar"><span class="javascript"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="javascript"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -87,10 +87,10 @@
                 <div class="portfolio-card-image php"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">PHP<!-- <img src="css.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit PHP</div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit PHP --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>PHP progress</h5> --><span class="bar"><span class="php"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="php"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -99,10 +99,10 @@
                 <div class="portfolio-card-image csharp"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">C#<!-- <img src="csharp.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit C#</div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit C# --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>C# progress</h5> --><span class="bar"><span class="csharp"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="csharp"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -111,22 +111,22 @@
                 <div class="portfolio-card-image java"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Java<!-- <img src="java.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit Java</div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit Java --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>Java progress</h5> --><span class="bar"><span class="java"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="java"></span></span>
                         </li> 
                     </div>
                 </div>
             </div>
             <div class="portfolio-card-wrapper">
-                <div class="portfolio-card-image cpp"></div>
+                <div class="portfolio-card-image sql"></div>
                 <div class="card-content-wrapper">
-                    <div class="card-content-logo">C++<!-- <img src="png/c++.png"  alt=""-->></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit C++</div>
+                    <div class="card-content-logo">SQL<!-- <img src="png/c++.png"  alt=""--></div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit C++ --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>C++ progress</h5> --><span class="bar"><span class="cpp"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="sql"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -135,10 +135,10 @@
                 <div class="portfolio-card-image solidity"></div> <!-- BILD ZU GROSS ALLES LAHM MUSS UMKONVERTIEREN -->
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Solidity<!-- <img src="css.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit Solidity</div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit Solidity --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>Solidity progress</h5> --><span class="bar"><span class="solidity"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="solidity"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -147,10 +147,10 @@
                 <div class="portfolio-card-image py"></div>
                 <div class="card-content-wrapper">
                     <div class="card-content-logo">Python<!-- <img src="css.png" alt=""> --></div>
-                    <div class="card-content-text">Hier steht etwas über meine Erfahrung mit Python</div>
+                    <div class="card-content-text"><!-- Hier steht etwas über meine Erfahrung mit Python --></div>
                     <div class="skills">
                         <li>
-                            <!-- <h5>Python progress</h5> --><span class="bar"><span class="python"></span></span>
+                            <h5>progress</h5><span class="bar"><span class="python"></span></span>
                         </li> 
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                         <p class="projektDetail">Schwierigkeisstufe: Mittel</p>  
                     </span>
                 </div>
-                
+
                 <div class="img-wrap">
                     <a class="noPointer" href="Projekte//P2-Cards/index.html" target="_blank"><img src="img/ProjektCards.jpg" alt="" width=640px height=480px></a>
                     <span class="img-text">
@@ -238,9 +238,34 @@
 
         <!-- contact-Form -->
 
-    <!--  <?php
-        print_r($_POST);
-    ?> -->
+    <?php
+
+    $messageSend = false;
+
+    if(isset($_POST['email']) && $_POST['email'] != '' ) {
+        
+            $userName = stripslashes($_POST['name']);
+            $email = stripslashes($_POST['email']);
+            $subject = stripslashes($_POST['subject']);
+            $tel = stripslashes($_POST['tel']);
+            $message = stripslashes($_POST['msg']). "\r\n";
+            $message .= " Email: " . $_POST['email']. "\r\n";
+            $message .= " Tel: " . $_POST['tel']. "\r\n";
+            $message .= " Name: " . $_POST['name']. "\r\n";
+
+
+            $to = "alexandr.iampolskaia@gmail.com";
+            /* $body = "";
+            $body .= "From: " . $userName . "\r\n";
+            $body .= "Email: " . $email . "\r\n";
+            $body .= "Message: " . $message . "\r\n";
+            $body .= "tel: " . $tel . "\r\n"; */
+            
+            mail($to, $subject, $message);
+            $messageSend = true;
+    }
+
+    ?>
 
     <section class="contact-form">
         <h2 class="title">Kontakt</h2>
@@ -249,10 +274,11 @@
                 <div class="cf-input-fields">
                     <input type="text" id="name" name="name" class="input" placeholder="Name" required>
                     <input type="text" id="email" name="email" class="input" placeholder="E-Mail" required>
+                    <input type="text" id="subject" name="subject" class="input" placeholder="Betreff" required>
                     <input type="text" id="tel" name="tel" class="input" placeholder="Tel." required>
                 </div>
                 <div class="cf-msg">
-                    <textarea id="msg" name="msg" placeholder="Nachricht" required></textarea>
+                    <textarea id="msg" name="msg" class="input" placeholder="Nachricht" required></textarea>
                     <button class="cf-btn">Senden</button>
                 </div>
             </div>
