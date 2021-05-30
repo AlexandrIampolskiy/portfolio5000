@@ -1,12 +1,12 @@
 body {
     background-color: white;
-    background-image: url(img/cardspic.jpg);
+    /* background-image: url(img/cardspic.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 h2 {
-    color: white;
+    color: black;
 }
 label {
     color: yellowgreen;
@@ -14,6 +14,10 @@ label {
     height: 30px;
 }
 
+.option0, .option1, .option2{
+    text-align: center;
+    margin-bottom: 35px;
+}
 #btn_next, #btn_reload {
     font-size: 15px;
     background-color:  yellowgreen;
@@ -40,7 +44,10 @@ label {
 }
 
 .card_wrap {
-    margin-bottom: 300px;
+    
+    width: 100vw;
+    margin: 0 auto;
+    
 }
 
 .allPairs {
@@ -48,8 +55,15 @@ label {
     float: left;
 }
 
+.rows {
+    
+    width: min-content;
+    margin: 0 auto;
+}
+
 #table {
-    margin:0 auto;
+    width: min-content;
+    margin: 0 auto;
 }
 
 #row, #row0, #row1, #row2, #row3 {
@@ -62,7 +76,27 @@ label {
     margin-left: 25px;
     cursor: pointer;
     border-radius: 10px;
-    border: 1px solid red;
+}
+
+#btn_row0:hover {
+    transition: 0.3s;
+    background-color: green;
+    color: yellow
+}
+#btn_row1:hover {
+    transition: 0.3s;
+    background-color: green;
+    color: yellow
+}
+#btn_row2:hover {
+    transition: 0.3s;
+    background-color: green;
+    color: yellow
+}
+#btn_row3:hover {
+    transition: 0.3s;
+    background-color: green;
+    color: yellow
 }
 
 .border_green0 {
@@ -97,7 +131,13 @@ label {
 }
 
 #right_cards {
-    margin-left: 30%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+@media screen and (max-width: 460px) {
+    .rows {
+        padding-left: 0%;
+    }
+}

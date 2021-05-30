@@ -8,6 +8,7 @@ const ALL_CARDS = NUMBER_OF_PAIRS * CARDS_IN_PAIR;
 let cards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 let sort = cards.sort((a, b) => 0.5 - Math.random());
 
+
 /* btn fürs neuladen der (random)Karten */
 let btn_reload = document.querySelector('#btn_reload');
 btn_reload.onclick = ()=> {
@@ -185,6 +186,11 @@ btn_next.onclick = function() {
     let option0 = document.querySelector('.option0');
     option0.classList.add('hidden');
 }
+
+function hide() {
+    btn_next.classList.ads('hidden');
+}
+
 
 
 

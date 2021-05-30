@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>clock</title>
+</head>
+<body>
+    <div class="clock">
+        <div class="arrow hour" id ="data-hour-arrow"></div>
+        <div class="arrow min" id="data-min-arrow"></div>
+        <div class="arrow sec" id ="data-sec-arrow"></div>
+        <div class="number number1">1</div>
+        <div class="number number2">2</div>
+        <div class="number number3">3</div>
+        <div class="number number4">4</div>
+        <div class="number number5">5</div>
+        <div class="number number6">6</div>
+        <div class="number number7">7</div>
+        <div class="number number8">8</div>
+        <div class="number number9">9</div>
+        <div class="number number10">10</div>
+        <div class="number number11">11</div>
+        <div class="number number12">12</div>
+    </div>
+    <div class="city">Berlin</div>
+    
+    <div class="btns">
+        <input type="button" value="Berlin" onclick="setTimeOffset(0, 'Berlin')">
+        <input type="button" value="NewYork" onclick="setTimeOffset(-6, 'New York')">
+        <input type="button" value="Moskau" onclick="setTimeOffset(2, 'Moskau')">
+        <input type="button" value="Sydney" onclick="setTimeOffset(10, 'Sydney')">
+        <input type="button" value="Tokio" onclick="setTimeOffset(8, 'Tokio')">
+    
+    </div>
+    
+        <!-- <input type="button" value="add Cty" onclick="visible()">
+        <div class="addDetails hidden">
+            <input type="text" class="cityName"> 
+            <input type="number" max = 12 min = -12 class="timeZone">
+            <input type="button" value="OK" onclick="hide(), addCity()">
+        </div> -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
