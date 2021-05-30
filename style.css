@@ -699,10 +699,13 @@ nav li a:hover {
     padding: 10px;
     color: rgb(0, 0, 0);
 }
+
 .cf-msg textarea {
     width: 100%;
     text-align: initial;
     height: 208px;
+    size: fixed;
+    resize: none;
 }
 
 .cf-btn {
