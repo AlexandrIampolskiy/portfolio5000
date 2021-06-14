@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $name = "dbportfolio";
-$user = "root";     /* for XAMPP use '' for FEBAS use "userkempalshik";*/
-$passwort = "";     /* for XAMPP use '' for FEBAS use "Alex0711alex0711" */
+$user = "root";    
+$passwort = "";     
 
 try{
   $mysql = new PDO("mysql:host=$host; dbname=$name", $user, $passwort);
