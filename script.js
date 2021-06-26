@@ -1,5 +1,11 @@
 
 
+
+/* ar changeToEngButton = document.getElementById("#changeToEng");
+changeToEngButton.onclick = changeToEng(); */
+
+
+
 /* var images = ["skyline.jpg", "img/html.jpg"];
 var background = document.getElementById("main-wrapper-img");
 

@@ -23,8 +23,8 @@
         </div>
         <div class="resume-adress">
           <h4>Adresse:</h4>
-          Musterstr.10 <br/>
-          13402 Berlin <br/>
+          Zobeltitzstraße 29 <br/>
+          13403 Berlin <br/>
         </div>
     </div>
   </section>
@@ -37,6 +37,7 @@
     <div class="werdegang-content">
       <div class="data_table_datum">
           <hr>
+          <div class="resume-datum">08.2020 <br/> Umschulung zum Fachinformatiker für Anwendungsentwicklung bei Dama.go GmbH, Berlin</div><hr>
           <div class="resume-datum">08.2019 <br/> Umschulung zum Fachinformatiker für Anwendungsentwicklung bei FORUM Berufsbildung e.V., Berlin</div><hr>
           <div class="resume-datum">04.2017 <br/> Offizieller Vertreter des russischen  Fußballvereins Anschi Machatschkala in Deutschland</div><hr>
           <div class="resume-datum">05.2015 <br/> Gründung, und Geschäftsführung „IAMPOLSKIY Import Export UG 	(haftungsbeschränkt)“</div><hr>
@@ -53,8 +54,8 @@
           <div class="resume-datum">09.1989 – 06.1992 <br/> Grundschule Kiew</div>
           <hr class="cut-line">
 
-          <div class="resume_skills">EDV/Programmiergrundkenntnisse: <br/> <p>JavaScript, Java, PHP, HTML, CSS, Python, Microsoft Word und Microsoft Excel.</div><hr>
-          <div class="resume_skills">Sprachkenntnisse: <br/> Englisch, Russisch</div>
+          <div class="resume_skills">EDV/Programmiergrundkenntnisse: <br/> <p>JavaScript, Java, PHP, SQL, HTML, CSS, Python, Microsoft Word und Microsoft Excel.</div><hr>
+          <div class="resume_skills">Sprachkenntnisse: <br/> Englisch, Russisch, Deutsch</div>
           <hr class="cut-line">
         </div>
     </div>

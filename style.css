@@ -123,6 +123,19 @@ nav li a:hover {
     
 }
 
+.changeToEn, .changeToDe  {
+    font-size: 20px;
+    height: 100%;
+    
+    margin: 3px;
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(18, 5, 200, 0.787);
+}
+
+
 /* main img */
 
 /* Preload! für die Bilder */
@@ -154,7 +167,7 @@ nav li a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: animate_img 70s infinite;
+    animation: animate_img 95s infinite;
     
 }
 
@@ -164,7 +177,7 @@ nav li a:hover {
         background-image: url("img/skyline.jpg");
     }
     10% {
-        background-image: url("img/wm.jpg");
+        background-image: url("img/wm1111.jpg");
     }
     20% {
         background-image: url("img/pyrenees.jpg");
