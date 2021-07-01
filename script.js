@@ -1,22 +1,6 @@
 
 
 
-/* ar changeToEngButton = document.getElementById("#changeToEng");
-changeToEngButton.onclick = changeToEng(); */
-
-
-
-/* var images = ["skyline.jpg", "img/html.jpg"];
-var background = document.getElementById("main-wrapper-img");
-
-
-  setInterval(() => {
-    for (i = 0; i <= images.length; i++) {
-      background.style.backgroundImage = 'url(' + images[i] + ')';
-    }
-  }, 1000);
-   */
-
 /* -------------------------------------------------------------------------------------- */
 /* Typing effect  gesehn bei https://www.youtube.com/watch?v=POX3dT-pB4E */
 
@@ -98,6 +82,8 @@ cards.forEach(card => {
   })
 })
 
+
+
 /* var footer = document.getElementById("footer");
 footer.onclick = function() {
 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -151,5 +137,4 @@ carouselSlide.addEventListener('transitionend', () => {
         carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
     }
 });
-
 

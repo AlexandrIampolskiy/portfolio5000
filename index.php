@@ -33,7 +33,7 @@
 <main>
 
     <section class="main-wrapper-img">
-        <h2 class="imgWelcome"><?php translate("index.welcomeText")?></h2> 
+        <h2 class="imgWelcome" onmouseover="mouseIn()" ><?php translate("index.welcomeText")?></h2> 
     </section> <!-- bild unter dem nav -->
     <!-- main text -->
     <section class="typing-wrapper-text">
@@ -302,6 +302,6 @@
 <?php
     require('footer.php');
 ?>
-    <script type="text/javascript" src="script.js"></script>
+    
 
 </body>

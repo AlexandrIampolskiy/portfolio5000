@@ -39,6 +39,24 @@ function translate($text) {
         "index.form.Tel" => "Tel",
         "index.form.Message" => "Nachricht",
         "index.form.Send" => "Senden",
+        //main  <section class="letter_content centered"> in bewerbung.php
+        // "sehr geehrte..." wenn cookie=EN dann Anrede in bewerbung.php (ca.Z.73 "print_r($row['anrede']);")
+        //"bewerbung.cv.salutation" => "dear"
+
+        //main <section class="resume"> in lebenslauf.php
+        "lebenslauf.titel.cv" => "Lebenslauf",
+        "lebenslauf.contact.contact" => "Kontankt",
+        "lebanslauf.contact.dress" => "Adresse",
+
+        //main <section class="werdegang"> in lebenslauf.php
+        "lebenslauf.title.career" => "Werdegang",
+        "lebenslauf.res_skills.prSkills" => "IT/Programming  skills",
+        "lebenslauf.res_skills.laSkills" => "Language skills",
+        "lebenslauf.res_skills.la" => "Englisch, Russisch, Deutsch",
+
+        //main <section class="werdegang"> in projekte.php
+        "projekte.titel.myProjects" => "Meine Projekte"
+
     );
 
     $en = array(
@@ -82,7 +100,21 @@ function translate($text) {
 
         //main  <section class="letter_content centered"> in bewerbung.php
         // "sehr geehrte..." wenn cookie=EN dann Anrede in bewerbung.php (ca.Z.73 "print_r($row['anrede']);")
-        "bewerbung.cv.salutation" => "dear"
+        //"bewerbung.cv.salutation" => "dear"
+        
+        //main <section class="resume"> in lebenslauf.php
+        "lebenslauf.titel.cv" => "Curriculum Vitae",
+        "lebenslauf.contact.contact" => "Contact",
+        "lebanslauf.contact.dress" => "Adress",
+        
+        //main <section class="werdegang"> in lebenslauf.php
+        "lebenslauf.title.career" => "Career",
+        "lebenslauf.res_skills.prSkills" => "IT/Programming  skills",
+        "lebenslauf.res_skills.laSkills" => "Language skills",
+        "lebenslauf.res_skills.la" => "German Russian English ",
+
+        //main <section class="werdegang"> in projekte.php
+        "projekte.titel.myProjects" => "My Projects"
     );  
 
     $ru = array(

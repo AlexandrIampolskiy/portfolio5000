@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+
+@font-face {
+    src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+    font-family: "Bebas Neue";
+} 
+
+@font-face {
+    src: url(fonts/News_Cycle/NewsCycle-Regular.ttf);
+    font-family: "News Cycle";
+}
 
 
 * {
@@ -21,7 +31,7 @@
 
 .title {
         /* font-family: 'News Cycle', sans-serif; */
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Bebas Neue';
         width: max-content;
         font-size: 40px;
         margin: auto;
@@ -59,7 +69,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .logo {
@@ -123,18 +133,21 @@ nav li a:hover {
     
 }
 
-.changeToEn, .changeToDe  {
-    font-size: 20px;
-    height: 100%;
+.langEn {
+    width: 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
     
-    margin: 3px;
-    padding: 3px;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgba(18, 5, 200, 0.787);
+}
+.langDe {
+    width: 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 
+.changeToEn:hover, .changeToDe:hover {
+    color: rgba(175, 92, 25, 0.787);
+}
 
 /* main img */
 
@@ -211,7 +224,7 @@ nav li a:hover {
 /* main-text */
 
 .imgWelcome {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     /* font-family: 'News Cycle', sans-serif; */
     font-size: 80px;
     font-weight: 200;
@@ -235,11 +248,11 @@ nav li a:hover {
 }
 
 .welcome {
-    /* font-family: 'News Cycle', sans-serif; */
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'News Cycle', sans-serif;
+    /* font-family: 'Bebas Neue'; */
     font-weight: 400;
     color: black;
-    letter-spacing: 3.5px;
+    letter-spacing: 1.5px;
     margin-top: 200px;
     padding: 0 30px;
 }
@@ -250,7 +263,7 @@ nav li a:hover {
     height: 100px;
     padding-top: 20px;
     padding-bottom: 600px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     /* font-family: 'News Cycle', sans-serif; */
     font-size: 40px;
     font-weight: 200;
@@ -286,7 +299,8 @@ nav li a:hover {
 
 .title {
     margin-bottom: 75px;
-    text-decoration: underline;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 .portfolio-cards-wrapper {
@@ -364,7 +378,7 @@ nav li a:hover {
 .card-content-logo {
     color: white;
     font-size: 70px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-weight: 200;
     letter-spacing: 5px;
     transition: 0.5s;
@@ -372,7 +386,7 @@ nav li a:hover {
 :hover.card-content-logo {
     transition: 0.5s;
     font-size: 80px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
 }
 
 .card-content-logo img {
@@ -1028,7 +1042,7 @@ hr {
 @media screen and (max-width: 460px) {
 
     .imgWelcome {
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Bebas Neue';
         /* font-family: 'News Cycle', sans-serif; */
         font-size: 45px;
         font-weight: 200;
@@ -1051,7 +1065,7 @@ hr {
         
         padding-top: 20px;
         padding-bottom: 400px;
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Bebas Neue';
         /* font-family: 'News Cycle', sans-serif; */
         font-size: 40px;
         font-weight: 200;
@@ -1122,7 +1136,7 @@ hr {
     height: 100px;
     padding-top: 20px;
     padding-bottom: 400px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     /* font-family: 'News Cycle', sans-serif; */
     font-size: 26px;
     font-weight: 400;
@@ -1157,7 +1171,7 @@ hr {
     :hover.card-content-logo {
     transition: 0.5s;
     font-size: 50px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     }
 
 }
